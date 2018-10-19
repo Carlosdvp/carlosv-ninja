@@ -5,3 +5,6 @@ This project is meant to upgrade the architecture of my portfolio site and imple
 Which will also serve to reduce the dependence on old tech like jQuery and increasingly irrelevant tech like Bootstrap. Both may have been a good solution to many problems in the past, but current web standards make these 2 technologies less and less necessary.
 
 
+// to run the dev server
+cd my-ninja-project
+npm run serve
