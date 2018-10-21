@@ -3,20 +3,22 @@
     
     <Navigation></Navigation>
 
-    <img alt="Vue logo" src="./assets/logo.png">
+    <Jumbotron></Jumbotron>
 
-    <HelloWorld msg="I want All the Things!!!"/>
+    <Gallery></Gallery>
 
     <contactMe></contactMe>
 
     <FooterComponent msg="Carlos V"></FooterComponent>
+    
   </div>
 </template>
 
 <script>
 
 import Navigation from './components/Navigation.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Jumbotron from './components/Jumbotron.vue'
+import Gallery from './components/Gallery.vue'
 import ContactMe from './components/Contact.vue'
 import FooterComponent from './components/Footer-Component.vue'
 
@@ -24,7 +26,8 @@ export default {
   name: 'app',
   components: {
     Navigation,
-    HelloWorld,
+    Jumbotron,
+    Gallery,
     ContactMe,
     FooterComponent
   }
