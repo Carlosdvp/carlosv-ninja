@@ -12,7 +12,7 @@
         <p>Santa Cruz de la Sierra, Bolivia</p>
       </div>
       <div>
-        <a href="http://www.arquitecturaapocaliptica.com" class="btn btn-primary" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
+        <a href="http://www.arquitecturaapocaliptica.com" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
       </div>
     </div>
 
@@ -81,7 +81,7 @@
         <h5>JS Project</h5>
         <p>Basic Chatbot App written in JavaScript</p>
       </div>
-      <div>
+      <div class="btn">
         <a href="http://carlosdvp.github.io/Udacity-Resume-Project/" title="Udacity Js Project" target="_blank">Visit the Project</a>
       </div>
     </div>
@@ -145,4 +145,14 @@ div {
   padding: 1em;
 }
 
+.btn {
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+}
+
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
 </style>
