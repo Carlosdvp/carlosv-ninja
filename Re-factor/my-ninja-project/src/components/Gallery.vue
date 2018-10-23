@@ -11,7 +11,7 @@
         <h5>Centro de Diseno y Construccion</h5>
         <p>Santa Cruz de la Sierra, Bolivia</p>
       </div>
-      <div>
+      <div class="btn">
         <a href="http://www.arquitecturaapocaliptica.com" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
       </div>
     </div>
@@ -25,8 +25,8 @@
         <h5>Github Repository</h5>
         <p>Source code and project details.</p>
       </div>
-      <div>
-        <a href="https://carlosdvp.github.io/Apocaliptica/" title="Arquitectura Apocaliptica" target="_blank">Visit the Project Repo</a>
+      <div class="btn">
+        <a href="https://carlosdvp.github.io/Apocaliptica/" title="Arquitectura Apocaliptica" target="_blank">Visit the Project</a>
       </div>
     </div>
 
@@ -39,7 +39,7 @@
         <h5>CSS Animations</h5>
         <p>Animating SVG images with CSS</p>
       </div>
-      <div>
+      <div class="btn">
         <a href="https://carlosdvp.github.io/DBZ-Animation/" title="DragonBall SVG Animation" target="_blank">Visit the Project</a>
       </div>
     </div>
@@ -51,9 +51,9 @@
       </a>
       <div>
         <h5>Responsive Portfolio Project</h5>
-        <p>Santa Cruz de la Sierra, Bolivia</p>
+        <p>Responsive Web Site Prototype</p>
       </div>
-      <div>
+      <div class="btn">
         <a href="http://carlosdvp.github.io/Responsive-Portfolio/" title="Responsive Portfolio Project" target="_blank">Visit the Project</a>
       </div>
     </div>
@@ -65,9 +65,9 @@
       </a>
       <div>
         <h5>Portfolio Website Number 3</h5>
-        <p>Falls Church, VA</p>
+        <p>Portfolio Prototype Using Bootstrap and jQuery</p>
       </div>
-      <div>
+      <div class="btn">
         <a href="https://carlosdvp.github.io/Website-project-3/" title="Portfolio Project Number 3" target="_blank">Visit the Project</a>
       </div>
     </div>
@@ -81,9 +81,11 @@
         <h5>JS Project</h5>
         <p>Basic Chatbot App written in JavaScript</p>
       </div>
+
       <div class="btn">
         <a href="http://carlosdvp.github.io/Udacity-Resume-Project/" title="Udacity Js Project" target="_blank">Visit the Project</a>
       </div>
+
     </div>
 
   </div>
@@ -120,6 +122,8 @@ export default {
 }
 
 .card {
+  display: grid;
+  grid-template-columns: 100%;
   align-items: center;
   justify-content: center;
   border: 2px solid ghostwhite;
@@ -146,13 +150,64 @@ div {
 }
 
 .btn {
+  justify-self: center;
   background: transparent;
   border: 2px solid #0099CC;
   border-radius: 6px;
+  margin: 0 0 1em;
+  width: 60%;
+  padding: 1em 0;
+}
+
+.btn:hover {
+  background: #0099CC;
 }
 
 a {
-  color: lightseagreen;
+  color: ghostwhite;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.btn a {
+  padding: 1em 2em;
+}
+
+@media only screen and (max-width: 1090px) {
+  .btn a {
+    font-size: .8em;
+    padding: 1em;
+  }
+
+  .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .btn a {
+    font-size: 1.3em;
+    padding: 1em;
+  }
+
+  .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
+
+  .card {
+    width: 70vw;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .btn a {
+    font-size: .8em;
+  }
 }
 </style>

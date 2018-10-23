@@ -47,6 +47,7 @@ body {
   background-color: lightsteelblue;
   color: ghostwhite;
   margin: 0;
+  padding: 0;
 }
 
 </style>
