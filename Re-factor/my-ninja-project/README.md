@@ -1,5 +1,22 @@
 # my-ninja-project
 
+## 2nd phse:
+
+- include Vue router
+- change it from a static gallery to thumbnails which open up mini-pages for each project
+
+
+
+
+
+
+
+
+
+
+
+************************************************************************************
+
 ## Project setup
 ```
 npm install

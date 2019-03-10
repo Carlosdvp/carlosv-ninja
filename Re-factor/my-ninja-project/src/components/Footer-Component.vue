@@ -1,7 +1,7 @@
 
 <template>
   <footer class="container-fluid footer py-3 bg-dark">
-    <p><small><a id="main-footer-link" class="links" href="http://carlosv.ninja" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2018</small></p>
+    <p><small><a id="main-footer-link" class="links" href="http://carlosv.ninja" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2019</small></p>
   </footer>
 </template>
 
