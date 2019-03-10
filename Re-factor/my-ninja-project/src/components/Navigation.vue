@@ -20,7 +20,7 @@
 				<a class="nav-link" href="#title-logo">Home</a>
 			</li>
 			<li class="nav-item-2">
-				<a class="nav-link" href="#portfolio-thumbnail">Portfolio</a>
+				<a class="nav-link" href=".main-gallery">Portfolio</a>
 			</li>
 			<li class="nav-item-3">
 				<a class="nav-link" href="#contact-info-main">Contact</a>

@@ -17,3 +17,18 @@ https://s3.amazonaws.com/carlosv.ninja-staging/dist/index.html
 
 -----------------------------------------------------------------------------
 
+DEploying to AWS S3 bucket
+
+1. Create Bucket
+2. Configure the AWS CLI
+3. Use the aws-cli to sync your ./dist folder to your new bucket. Syncing will diff what’s in your ./dist folder with what’s in the bucket and only upload the required changes.
+
+aws s3 sync ./dist s3://your-bucket-name
+
+4. Tab back to your S3 bucket endpoint, and you should see your site hosted on S3!
+
+5. add the following script entry to package.json so you can run npm run deploy when you want to sync your files.
+
+"scripts": {
+  "deploy": "aws s3 sync ./dist s3://your-bucket-name"
+}
