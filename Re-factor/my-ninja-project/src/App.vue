@@ -18,7 +18,7 @@
 
 import Navigation from './components/Navigation.vue'
 import Jumbotron from './components/Jumbotron.vue'
-import Gallery from './components/Gallery.vue'
+import Gallery from '@/views/Gallery.vue'
 import ContactMe from './components/Contact.vue'
 import FooterComponent from './components/Footer-Component.vue'
 
@@ -31,7 +31,7 @@ export default {
     ContactMe,
     FooterComponent
   }
-}
+} 
 
 </script>
 

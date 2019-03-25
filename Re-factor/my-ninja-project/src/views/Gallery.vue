@@ -95,8 +95,13 @@
 
 
 <script>
+// import Card from './components/Card.vue'
+
 export default {
   name: 'Gallery'
+  // components: {
+  //   Card
+  // }
 }
 </script>
 
