@@ -3,7 +3,7 @@
 <!-- Navbar Section -->
 <nav class="container">
 
-	<a class="navbar-brand" href="index.html">
+	<a class="navbar-brand" href="/">
 		<img id="logo-navbrand" src="../assets/logo.png" alt="logo">
 		<p class="logo-text">Carlos V</p> 
 	</a>
@@ -17,10 +17,10 @@
 
 		<ul class="navbar-nav">
 			<li class="nav-item-1">
-				<a class="nav-link" href="#title-logo">Home</a>
+				<router-link to="/" class="nav-link">Home</router-link>
 			</li>
 			<li class="nav-item-2">
-				<a class="nav-link" href=".main-gallery">Portfolio</a>
+				<router-link to="/portfolio" class="nav-link">Portfolio</router-link>
 			</li>
 			<li class="nav-item-3">
 				<a class="nav-link" href="#contact-info-main">Contact</a>

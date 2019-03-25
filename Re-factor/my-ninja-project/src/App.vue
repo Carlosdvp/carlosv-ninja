@@ -3,11 +3,7 @@
     
     <Navigation></Navigation>
 
-    <Jumbotron></Jumbotron>
-
-    <Gallery></Gallery>
-
-    <contactMe></contactMe>
+    <router-view />
 
     <FooterComponent msg="Carlos V"></FooterComponent>
     
@@ -17,9 +13,7 @@
 <script>
 
 import Navigation from './components/Navigation.vue'
-import Jumbotron from './components/Jumbotron.vue'
-import Gallery from '@/views/Gallery.vue'
-import ContactMe from './components/Contact.vue'
+import Jumbotron from '@/views/Jumbotron.vue'
 import FooterComponent from './components/Footer-Component.vue'
 
 export default {
@@ -27,8 +21,6 @@ export default {
   components: {
     Navigation,
     Jumbotron,
-    Gallery,
-    ContactMe,
     FooterComponent
   }
 } 
