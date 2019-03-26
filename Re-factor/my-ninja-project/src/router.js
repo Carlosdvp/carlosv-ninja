@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import App from './App.vue'
 import Jumbotron from './views/Jumbotron.vue'
 import Gallery from './views/Gallery.vue'
-
+import ProjectCard from './views/Project-Card.vue'
 
 Vue.use(Router)
 
@@ -20,11 +20,10 @@ export default new Router({
 			name: 'main-gallery',
 			component: Gallery
 		},
-		// {
-		// 	path: '/portfolio/project/:id',
-		// 	name: 'card',
-		// 	component: Card,
-		// 	props: true
-		// }
+		{
+			path: '/portfolio/project-card',
+			name: 'project-card',
+			component: ProjectCard
+		}
 	]
 })

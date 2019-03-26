@@ -1,21 +1,17 @@
 <template>
 
-  <div class="main-gallery">
 
-    <div class="card">
-      <h4>{{title}}</h4>
-      <a href="https://carlosdvp.github.io/Apocaliptica/" data-toggle="tooltip" title="Arquitectura Apocaliptica - Top Section" target="_blank">
-        <img class="gallery-image img-thumbnail" src="../assets/Apocaliptica-1.jpg" alt="project image">
-      </a>
-      <div>
-        <h5>Centro de Diseno y Construccion</h5>
-        <p>Santa Cruz de la Sierra, Bolivia</p>
-      </div>
-      <div class="btn">
-        <a href="http://www.arquitecturaapocaliptica.com" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
-      </div>
+
+  <div class="card">
+    <h4>{{title}}</h4>
+      <img class="gallery-image img-thumbnail" src="../assets/Apocaliptica-1.jpg" alt="project image">
+    <div>
+      <h5>Centro de Diseno y Construccion</h5>
+      <p>Santa Cruz de la Sierra, Bolivia</p>
     </div>
-
+    <div class="btn">
+      <a href="http://www.arquitecturaapocaliptica.com" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
+    </div>
   </div>
 
 </template>
@@ -32,23 +28,6 @@ export default {
 
 <style scoped>
   
-.main-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 1.5em;
-  margin: 0 auto;
-  padding: 6rem 2rem;
-  background:  linear-gradient(
-    rgba(50, 100, 100, .7),
-    rgba(50, 100, 100, .7)
-  ),
-  url('../assets/splatter.jpg');
-  background-repeat: round;
-  background-size: contain;
-  color: ghostwhite;
-}
-
 .card {
   display: grid;
   grid-template-columns: 100%;
