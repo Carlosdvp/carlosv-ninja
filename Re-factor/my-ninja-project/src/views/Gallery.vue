@@ -1,5 +1,8 @@
 <template>
 
+<div>
+  <h1 id="gallery-title">Project Gallery</h1>
+  
   <div class="main-gallery">
 
     <div class="card">
@@ -90,6 +93,8 @@
 
   </div>
 
+</div>
+
 </template>
 
 
@@ -115,7 +120,7 @@ export default {
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 1.5em;
   margin: 0 auto;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background:  linear-gradient(
     rgba(50, 100, 100, .7),
     rgba(50, 100, 100, .7)
@@ -124,6 +129,15 @@ export default {
   background-repeat: round;
   background-size: contain;
   color: ghostwhite;
+}
+
+#gallery-title {
+  color: black;
+  text-shadow: darkred 1px 1px;
+  font-family: serif;
+  font-size: 3em;
+  margin: 0.3em 0;
+  letter-spacing: .15em;
 }
 
 .card {

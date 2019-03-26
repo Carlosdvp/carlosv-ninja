@@ -13,14 +13,12 @@
 <script>
 
 import Navigation from './components/Navigation.vue'
-import Jumbotron from '@/views/Jumbotron.vue'
 import FooterComponent from './components/Footer-Component.vue'
 
 export default {
   name: 'app',
   components: {
     Navigation,
-    Jumbotron,
     FooterComponent
   }
 } 
