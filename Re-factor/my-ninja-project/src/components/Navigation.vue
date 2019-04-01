@@ -23,7 +23,7 @@
 				<router-link to="/portfolio" class="nav-link">Portfolio</router-link>
 			</li>
 			<li class="nav-item-3">
-				<a class="nav-link" href="#contact-info-main">Contact</a>
+				<router-link to="/#contact-info-main" class="nav-link">Contact</router-link>>
 			</li>
 		</ul>
 

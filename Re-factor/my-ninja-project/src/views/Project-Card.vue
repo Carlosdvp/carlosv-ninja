@@ -3,7 +3,7 @@
   <div class="card">
 
     <a href="https://carlosdvp.github.io/Apocaliptica/" data-toggle="tooltip" title="Arquitectura Apocaliptica - Top Section" target="_blank">
-      <img class="gallery-image img-thumbnail" src="../assets/Apocaliptica-1.jpg" alt="project image">
+      <img class="gallery-image img-thumbnail" src="../../public/images/Apocaliptica-1.jpg" alt="project image">
     </a>
 
     <div>
@@ -41,13 +41,14 @@
 
 .card {
   display: grid;
+  width: 72vw;
   grid-template-columns: 45% 54%;
   align-items: center;
   justify-content: center;
   border: 2px solid ghostwhite;
   border-radius: 15px;
   padding: .5em;
-  margin: 3em;
+  margin: 3em auto;
 }
 
 .gallery-image {
