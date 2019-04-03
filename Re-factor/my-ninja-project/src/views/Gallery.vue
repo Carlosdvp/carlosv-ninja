@@ -20,7 +20,6 @@
     </div>
 
   </div>
-
 </div>
 
 </template>
@@ -36,7 +35,7 @@ export default {
       cards: [
         {
           header: "Arquitectura Apocaliptica Srl",
-          href: "/portfolio/project-card",
+          href: "/portfolio/project-1",
           title: "Arquitectura Apocaliptica - Top Section",
           image: require("../../public/images/Apocaliptica-1.jpg"),
           imageAlt: "project image",
@@ -44,11 +43,12 @@ export default {
           description: "Santa Cruz de la Sierra, Bolivia",
           btnLink: "http://www.arquitecturaapocaliptica.com",
           btnTitle: "Arquitectura Apocaliptica",
-          btnText: "Visit the Website"
+          btnText: "Visit the Website",
+          id: 1
         },
         {
           header: "DragonBall SVG Animation",
-          href: "/portfolio/project-card",
+          href: "/portfolio/project-2",
           title: "DragonBall SVG Animation",
           image: require("../../public/images/SVG-Animation.jpg"),
           imageAlt: "DBZ project image",
@@ -56,11 +56,12 @@ export default {
           description: "Animating SVG images with CSS",
           btnLink: "https://carlosdvp.github.io/DBZ-Animation/",
           btnTitle: "DragonBall SVG Animation",
-          btnText: "Visit the Project"
+          btnText: "Visit the Project",
+          id: 2
         },
         {
           header: "Responsive Portfolio",
-          href: "/portfolio/project-card",
+          href: "/portfolio/project-3",
           title: "Portfolio Website Number 3",
           image: require("../../public/images/Website-project-3.jpg"),
           imageAlt: "Portfolio Poject 3",
@@ -68,11 +69,12 @@ export default {
           description: "Portfolio Prototype Using Bootstrap and jQuery",
           btnLink: "https://carlosdvp.github.io/Website-project-3/",
           btnTitle: "Portfolio Project Number 3",
-          btnText: "Visit the Project"
+          btnText: "Visit the Project",
+          id: 3
         },
         {
           header: "JS Basic Chatbot Project",
-          href: "/portfolio/project-card",
+          href: "/portfolio/project-4",
           title: "Basic JS chatbot",
           image: require("../../public/images/basic-chatbot.png"),
           imageAlt: "JS chatbot Project",
@@ -80,7 +82,8 @@ export default {
           description: "Basic Chatbot App written in JavaScript",
           btnLink: "https://carlosdvp.github.io/First-bot-Chatbot/",
           btnTitle: "JS Chatbot 1",
-          btnText: "Visit the Project"
+          btnText: "Visit the Project",
+          id: 4
         }
       ]
 

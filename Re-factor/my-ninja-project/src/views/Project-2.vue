@@ -1,40 +1,71 @@
 <template>
 
-  <div class="card">
+<div>
 
-    <a href="https://carlosdvp.github.io/Apocaliptica/" data-toggle="tooltip" title="Arquitectura Apocaliptica - Top Section" target="_blank">
-      <img class="gallery-image img-thumbnail" src="../../public/images/Apocaliptica-1.jpg" alt="project image">
+  <div class="card" v-for="project in projects">
+
+    <a :href="project.href" data-toggle="tooltip" title="" target="_blank">
+      <img class="gallery-image img-thumbnail" :src="project.image" :alt="project.imageAlt">
     </a>
 
     <div>
-      <h2>Arquitectura Apocaliptica Srl</h2>
-      <h5>Centro de Diseno y Construccion</h5>
-      <p>Santa Cruz de la Sierra, Bolivia</p>
+      <h2>{{ project.title}}</h2>
+      <h5>{{ project.subtitle }}</h5>
+      <p>{{ project.subtitleTwo }}</p>
       <div id="description">
         <h4>Description</h4>
-        <p>Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.</p>
-        <p>Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.</p>
+        <p>{{ project.descriptionOne }}</p>
+        <p>{{ project.descriptionTwo }}</p>
       </div>
       <br>
       <h4 id="list-title">Tech Stack</h4>
       <ul>
-        <li>HTML</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Bootstrap v4.0</li>
-        <li>jQuery</li>
+        <li v-for="tech in project.techStack">
+          {{ tech }}          
+        </li>
       </ul>
     </div>
     <div class="btn">
-      <a href="http://www.arquitecturaapocaliptica.com" title="Arquitectura Apocaliptica" target="_blank">Visit the Website</a>
+      <a :href="project.btnLink" :title="btnTitle" target="_blank">Visit the Website</a>
     </div>
 
   </div>
 
+</div>
+
 </template>
 
 <script>
-	
+
+import Card from '@/components/Card.vue'
+
+export default {
+  name: "Project-2",
+  components: {
+    Card
+  },
+  data() {
+    return {
+      projects: [
+        {
+          href: "https://carlosdvp.github.io/DBZ-Animation/",
+          linkTitle: "SVG Animation",
+          image: require("../../public/images/SVG-Animation.jpg"),
+          imageAlt: "project image",
+          title: "Dragonball SVG Animation",
+          subtitle: "CSS Animations",
+          subtitleTwo: "Animating SVG images with CSS",
+          descriptionOne: "Proof of concept website whose aim was to use SVG and Javascript to do some nice CSS animation.",
+          descriptionTwo: "Train like a Sayin, Eat like a Sayin, Sleep like a Sayin.",
+          techStack: ["HTML", "CSS3", "JavaScript", "SVG"],
+          btnLink: "https://carlosdvp.github.io/DBZ-Animation/",
+          btnTitle: "DragonBall SVG Animation"
+        }
+      ]
+    }
+  }
+}
+
 </script>
 
 <style scoped>

@@ -3,7 +3,11 @@ import Router from 'vue-router'
 import App from './App.vue'
 import Jumbotron from './views/Jumbotron.vue'
 import Gallery from './views/Gallery.vue'
-import ProjectCard from './views/Project-Card.vue'
+import ProjectOne from './views/Project-1.vue'
+import ProjectTwo from './views/Project-2.vue'
+import ProjectThree from './views/Project-3.vue'
+import ProjectFour from './views/Project-4.vue'
+
 
 Vue.use(Router)
 
@@ -21,9 +25,24 @@ export default new Router({
 			component: Gallery
 		},
 		{
-			path: '/portfolio/project-card',
-			name: 'project-card',
-			component: ProjectCard
+			path: '/portfolio/project-1',
+			name: 'project-1',
+			component: ProjectOne
+		},
+		{
+			path: '/portfolio/project-2',
+			name: 'project-2',
+			component: ProjectTwo
+		},
+		{
+			path: '/portfolio/project-3',
+			name: 'project-3',
+			component: ProjectThree
+		},
+		{
+			path: '/portfolio/project-4',
+			name: 'project-4',
+			component: ProjectFour
 		}
 	]
 })
