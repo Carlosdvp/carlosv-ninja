@@ -8,7 +8,7 @@
       <hr>
       <h3 id="sub-title">Web Designer &nbsp; | &nbsp; Front End Developer</h3>
       <div id="header-intro">
-        <p>Hey there! I'm Carlos V, a Web Designer and Front End Developer who calls the world his home. On this page you will find some of the things I've made, enjoy!</p>
+        <p>On this page you will find some of the things I've made, enjoy!</p>
         <p>This site was built with Vue and CSS Grid.</p>
       </div>
     </header>

@@ -7,6 +7,7 @@ import ProjectOne from './views/Project-1.vue'
 import ProjectTwo from './views/Project-2.vue'
 import ProjectThree from './views/Project-3.vue'
 import ProjectFour from './views/Project-4.vue'
+import About from './views/About.vue'
 
 
 Vue.use(Router)
@@ -43,6 +44,11 @@ export default new Router({
 			path: '/portfolio/project-4',
 			name: 'project-4',
 			component: ProjectFour
+		},
+		{
+			path: '/about',
+			name: 'about',
+			component: About
 		}
 	]
 })
