@@ -35,7 +35,7 @@ export default {
       cards: [
         {
           header: "Arquitectura Apocaliptica Srl",
-          href: "/portfolio/project-1",
+          href: "portfolio/project-1",
           title: "Arquitectura Apocaliptica - Top Section",
           image: require("../../public/images/Apocaliptica-1.jpg"),
           imageAlt: "project image",
@@ -48,7 +48,7 @@ export default {
         },
         {
           header: "DragonBall SVG Animation",
-          href: "/portfolio/project-2",
+          href: "portfolio/project-2",
           title: "DragonBall SVG Animation",
           image: require("../../public/images/SVG-Animation.jpg"),
           imageAlt: "DBZ project image",
@@ -61,7 +61,7 @@ export default {
         },
         {
           header: "Responsive Portfolio",
-          href: "/portfolio/project-3",
+          href: "portfolio/project-3",
           title: "Portfolio Website Number 3",
           image: require("../../public/images/Website-project-3.jpg"),
           imageAlt: "Portfolio Poject 3",
@@ -74,7 +74,7 @@ export default {
         },
         {
           header: "JS Basic Chatbot Project",
-          href: "/portfolio/project-4",
+          href: "portfolio/project-4",
           title: "Basic JS chatbot",
           image: require("../../public/images/basic-chatbot.png"),
           imageAlt: "JS chatbot Project",

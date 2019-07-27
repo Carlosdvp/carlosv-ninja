@@ -12,7 +12,8 @@ import About from './views/About.vue'
 
 Vue.use(Router)
 
-export default new Router({
+
+let router = new Router({
 	mode: 'history',
 	routes: [
 		{
@@ -27,7 +28,6 @@ export default new Router({
 		},
 		{
 			path: '/portfolio/project-1',
-			name: 'project-1',
 			component: ProjectOne
 		},
 		{
@@ -52,3 +52,5 @@ export default new Router({
 		}
 	]
 })
+
+export default router
