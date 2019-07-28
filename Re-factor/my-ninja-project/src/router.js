@@ -6,7 +6,7 @@ import Gallery from './views/Gallery.vue'
 import ProjectOne from './views/Project-1.vue'
 import ProjectTwo from './views/Project-2.vue'
 import ProjectThree from './views/Project-3.vue'
-import ProjectFour from './views/Project-4.vue'
+
 import About from './views/About.vue'
 
 
@@ -28,6 +28,7 @@ let router = new Router({
 		},
 		{
 			path: '/portfolio/project-1',
+			name: 'project-1',
 			component: ProjectOne
 		},
 		{
@@ -39,11 +40,6 @@ let router = new Router({
 			path: '/portfolio/project-3',
 			name: 'project-3',
 			component: ProjectThree
-		},
-		{
-			path: '/portfolio/project-4',
-			name: 'project-4',
-			component: ProjectFour
 		},
 		{
 			path: '/about',

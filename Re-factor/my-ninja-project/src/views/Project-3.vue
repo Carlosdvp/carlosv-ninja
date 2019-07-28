@@ -45,17 +45,16 @@ export default {
     return {
       projects: [
         {
-          href: "https://carlosdvp.github.io/Website-project-3/",
-          linkTitle: "Responsive Portfolio",
-          image: require("../../public/images/Website-project-3.jpg"),
+          href: "https://carlosdvp.github.io/First-bot-Chatbot/",
+          linkTitle: "JS Basic Chatbot Project",
+          image: require("../../public/images/basic-chatbot.png"),
           imageAlt: "project image",
-          title: "Portfolio Website Number 3",
-          subtitle: "Portfolio Website",
-          subtitleTwo: "Portfolio Prototype Using Bootstrap and jQuery",
-          descriptionOne: "One page responsive portfolio website, optiized for Mobile and created with a simple and clean design.",
-          techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
-          btnLink: "https://carlosdvp.github.io/Website-project-3/",
-          btnTitle: "Responsive Portfolio"
+          title: "JS Basic Chatbot Project",
+          subtitleTwo: "JS chatbot",
+          descriptionOne: "Proof of concept chatbot. Created with JavaScript and simple interactive conversation functionality, this is the most basic implementation of the chatbot using only HTML and JavaScript.",
+          techStack: ["HTML", "CSS3", "JavaScript"],
+          btnLink: "https://carlosdvp.github.io/First-bot-Chatbot/",
+          btnTitle: "JS Basic Chatbot Project"
         }
       ]
     }

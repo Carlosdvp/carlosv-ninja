@@ -7,9 +7,9 @@
 
     <div class="card" v-for="card in cards">
       <h4>{{ card.header }}</h4>
-      <a :href="card.href" data-toggle="tooltip" :title="card.title">
+      <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
         <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-      </a>
+      </router-link>
       <div>
         <h5>{{ card.subtitle }}</h5>
         <p>{{ card.description }}</p>
@@ -20,7 +20,6 @@
     </div>
 
   </div>
-  <router-view></router-view>
 </div>
 
 </template>
@@ -36,7 +35,7 @@ export default {
       cards: [
         {
           header: "Arquitectura Apocaliptica Srl",
-          href: "portfolio/project-1",
+          href: "/portfolio/project-1",
           title: "Arquitectura Apocaliptica - Top Section",
           image: require("../../public/images/Apocaliptica-1.jpg"),
           imageAlt: "project image",
@@ -61,21 +60,8 @@ export default {
           id: 2
         },
         {
-          header: "Responsive Portfolio",
-          href: "portfolio/project-3",
-          title: "Portfolio Website Number 3",
-          image: require("../../public/images/Website-project-3.jpg"),
-          imageAlt: "Portfolio Poject 3",
-          subtitle: "Portfolio Website Number 3",
-          description: "Portfolio Prototype Using Bootstrap and jQuery",
-          btnLink: "https://carlosdvp.github.io/Website-project-3/",
-          btnTitle: "Portfolio Project Number 3",
-          btnText: "Visit the Project",
-          id: 3
-        },
-        {
           header: "JS Basic Chatbot Project",
-          href: "portfolio/project-4",
+          href: "portfolio/project-3",
           title: "Basic JS chatbot",
           image: require("../../public/images/basic-chatbot.png"),
           imageAlt: "JS chatbot Project",
@@ -84,7 +70,7 @@ export default {
           btnLink: "https://carlosdvp.github.io/First-bot-Chatbot/",
           btnTitle: "JS Chatbot 1",
           btnText: "Visit the Project",
-          id: 4
+          id: 3
         }
       ]
 
