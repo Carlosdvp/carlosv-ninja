@@ -26,7 +26,7 @@
       </ul>
     </div>
     <div class="btn">
-      <a :href="project.btnLink" :title="btnTitle" target="_blank">Visit the Website</a>
+      <a :href="project.btnLink" :title="project.btnTitle" target="_blank">Visit the Website</a>
     </div>
 
   </div>

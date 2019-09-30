@@ -15,7 +15,7 @@
         <p>{{ card.description }}</p>
       </div>
       <div class="btn">
-        <a :href="card.btnLink" :title="card.brnTitle" target="_blank">{{ card.btnText }}</a>
+        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
       </div>
     </div>
 
@@ -71,6 +71,19 @@ export default {
           btnTitle: "JS Chatbot 1",
           btnText: "Visit the Project",
           id: 3
+        },
+        {
+          header: "Chuck Norris Fact Generator",
+          href: "/portfolio/project-4",
+          title: "Chuck Facts App",
+          image: require("../../public/images/chuck-facts.png"),
+          imageAlt: "Chuck Norris Facts",
+          subtitle: "JS Project",
+          description: "App to consume the Chuck Norris API with Axios",
+          btnLink: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
+          btnTitle: "Chuck Norris Facts",
+          btnText: "Visit the Project",
+          id: 4
         }
       ]
 
@@ -199,7 +212,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 721px) {
   .btn a {
     font-size: .8em;
   }

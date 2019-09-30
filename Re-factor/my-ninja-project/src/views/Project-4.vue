@@ -40,23 +40,21 @@
 import Card from '@/components/Card.vue'
 
 export default {
-  name: "Project-2",
+  name: "Project-4",
   data() {
     return {
       projects: [
         {
-          href: "https://carlosdvp.github.io/DBZ-Animation/",
-          linkTitle: "SVG Animation",
-          image: require("../../public/images/SVG-Animation.jpg"),
+          href: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
+          linkTitle: "Chuck Facts App",
+          image: require("../../public/images/chuck-facts.png"),
           imageAlt: "project image",
-          title: "Dragonball SVG Animation",
-          subtitle: "CSS Animations",
-          subtitleTwo: "Animating SVG images with CSS",
-          descriptionOne: "Proof of concept website whose aim was to use SVG and Javascript to do some nice CSS animation.",
-          descriptionTwo: "Train like a Sayin, Eat like a Sayin, Sleep like a Sayin.",
-          techStack: ["HTML", "CSS3", "JavaScript", "SVG"],
-          btnLink: "https://carlosdvp.github.io/DBZ-Animation/",
-          btnTitle: "DragonBall SVG Animation"
+          title: "Chuck Norris Facts",
+          subtitleTwo: "JS Project",
+          descriptionOne: "Javascript App to consume the Chuck Norris API with Axios.",
+          techStack: ["HTML", "CSS3", "JavaScript", "Axios"],
+          btnLink: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
+          btnTitle: "Chuck Norris Facts"
         }
       ]
     }
