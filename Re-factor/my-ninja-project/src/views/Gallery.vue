@@ -84,6 +84,19 @@ export default {
           btnTitle: "Chuck Norris Facts",
           btnText: "Visit the Project",
           id: 4
+        },
+        {
+          header: "Clickable Color Changing Grid",
+          href: "/portfolio/project-5",
+          title: "Color Changing Grid",
+          image: require("../../public/images/color-grid.png"),
+          imageAlt: "Colored grid",
+          subtitle: "D3JS Project",
+          description: "Grid with clickable cells",
+          btnLink: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
+          btnTitle: "Colored Grid",
+          btnText: "Visit the Project",
+          id: 5
         }
       ]
 
