@@ -45,18 +45,18 @@ export default {
     return {
       projects: [
         {
-          href: "https://carlosdvp.github.io/DBZ-Animation/",
-          linkTitle: "SVG Animation",
-          image: require("../../public/images/SVG-Animation.jpg"),
+          href: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+          linkTitle: "Pricefeed",
+          image: require("../../public/images/BTC_ETH.jpg"),
           imageAlt: "project image",
-          title: "Dragonball SVG Animation",
-          subtitle: "CSS Animations",
-          subtitleTwo: "Animating SVG images with CSS",
-          descriptionOne: "Proof of concept website whose aim was to use SVG and Javascript to do some nice CSS animation.",
-          descriptionTwo: "Train like a Sayin, Eat like a Sayin, Sleep like a Sayin.",
-          techStack: ["HTML", "CSS3", "JavaScript", "SVG"],
-          btnLink: "https://carlosdvp.github.io/DBZ-Animation/",
-          btnTitle: "DragonBall SVG Animation"
+          title: "BTC / ETH Pricefeed",
+          subtitle: "API and Websockets",
+          subtitleTwo: "Live pricefeed with the Binance API.",
+          descriptionOne: "Proof of concept app to get price information for a crypto pair using the Binance API and websockets.",
+          descriptionTwo: "Connection made with the Testnet, API calls made using Axios.",
+          techStack: ["HTML", "CSS3", "JavaScript", "VueJS", "NodeJS", "Axios"],
+          btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+          btnTitle: "BTC-ETH Pricefeed"
         }
       ]
     }

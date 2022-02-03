@@ -47,15 +47,15 @@ export default {
           id: 1
         },
         {
-          header: "DragonBall SVG Animation",
+          header: "BTC / ETH Pricefeed",
           href: "portfolio/project-2",
-          title: "DragonBall SVG Animation",
-          image: require("../../public/images/SVG-Animation.jpg"),
-          imageAlt: "DBZ project image",
-          subtitle: "CSS Animations",
-          description: "Animating SVG images with CSS",
-          btnLink: "https://carlosdvp.github.io/DBZ-Animation/",
-          btnTitle: "DragonBall SVG Animation",
+          title: "Pricefeed",
+          image: require("../../public/images/BTC_ETH.jpg"),
+          imageAlt: "BTC and ETH coins",
+          subtitle: "API and Websockets",
+          description: "Live pricefeed with the Binance API.",
+          btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+          btnTitle: "Pricefeed",
           btnText: "Visit the Project",
           id: 2
         },
