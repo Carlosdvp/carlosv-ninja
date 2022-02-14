@@ -45,16 +45,16 @@ export default {
     return {
       projects: [
         {
-          href: "https://carlosdvp.github.io/First-bot-Chatbot/",
-          linkTitle: "JS Basic Chatbot Project",
-          image: require("../../public/images/basic-chatbot.png"),
+          href: "https://birdapp-clone.herokuapp.com/",
+          linkTitle: "Bird app clone",
+          image: require("../../public/images/bird.jpg"),
           imageAlt: "project image",
-          title: "JS Basic Chatbot Project",
-          subtitleTwo: "JS chatbot",
-          descriptionOne: "Proof of concept chatbot. Created with JavaScript and simple interactive conversation functionality, this is the most basic implementation of the chatbot using only HTML and JavaScript.",
-          techStack: ["HTML", "CSS3", "JavaScript"],
-          btnLink: "https://carlosdvp.github.io/First-bot-Chatbot/",
-          btnTitle: "JS Basic Chatbot Project"
+          title: "Vue 3 Bird App Clone",
+          subtitleTwo: "Bird clone",
+          descriptionOne: "This is a simple clone of the blue bird app, built using Vue 3, along with Vue router and Vuex for state management. Deployed to Heroku",
+          techStack: ["HTML", "CSS3", "JavaScript", "Vue 3", "Vue router", "Vuex"],
+          btnLink: "https://birdapp-clone.herokuapp.com/",
+          btnTitle: "Vue 3 App project"
         }
       ]
     }

@@ -60,15 +60,15 @@ export default {
           id: 2
         },
         {
-          header: "JS Basic Chatbot Project",
+          header: "Vue 3 Bird app Clone",
           href: "portfolio/project-3",
-          title: "Basic JS chatbot",
-          image: require("../../public/images/basic-chatbot.png"),
-          imageAlt: "JS chatbot Project",
-          subtitle: "JS Project",
-          description: "Basic Chatbot App written in JavaScript",
-          btnLink: "https://carlosdvp.github.io/First-bot-Chatbot/",
-          btnTitle: "JS Chatbot 1",
+          title: "Vue app project",
+          image: require("../../public/images/bird.jpg"),
+          imageAlt: "Some bird",
+          subtitle: "Vue 3 Project",
+          description: "Bird app clone created with Vue 3",
+          btnLink: "https://birdapp-clone.herokuapp.com/",
+          btnTitle: "Bird app clone",
           btnText: "Visit the Project",
           id: 3
         },
