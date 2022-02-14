@@ -17,18 +17,15 @@ https://s3.amazonaws.com/carlosv.ninja-staging/dist/index.html
 
 -----------------------------------------------------------------------------
 
-DEploying to AWS S3 bucket
 
-1. Create Bucket
-2. Configure the AWS CLI
-3. Use the aws-cli to sync your ./dist folder to your new bucket. Syncing will diff what’s in your ./dist folder with what’s in the bucket and only upload the required changes.
+# Using Amplify
 
-aws s3 sync ./dist s3://your-bucket-name
+## Linked to the github repo for the site
 
-4. Tab back to your S3 bucket endpoint, and you should see your site hosted on S3!
+- set it up for cotinuous deployment
+- should make it easier to re-upload the site anytime I add or change something; this way I won't have to upload the entire build folder.
 
-5. add the following script entry to package.json so you can run npm run deploy when you want to sync your files.
-
-"scripts": {
-  "deploy": "aws s3 sync ./dist s3://your-bucket-name"
-}
+- I still need TODO the following:
+  - set up a test branch, so I don't break my website by changing stuff on prod
+  - get it to redirect carlosv.dev to www.carlosv.dev; right now I have to type in the www using the root name directly goes nowhere.
+  - might also need a subdomain for testing, something like development.carlosv.dev
