@@ -53,7 +53,7 @@ export default {
           descriptionOne: "Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.",
           descriptionTwo: "Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.",
           techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
-          btnLink: "http://www.arquitecturaapocaliptica.com",
+          btnLink: "https://carlosdvp.github.io/Apocaliptica/",
           btnTitle: "Arquitectura Apocaliptica"
         }
       ]

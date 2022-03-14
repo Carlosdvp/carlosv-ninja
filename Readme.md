@@ -6,13 +6,7 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
 
 
 ### to run the dev server
-cd my-ninja-project
 npm run serve
-
-
-### AWS staging site
-
-https://s3.amazonaws.com/carlosv.ninja-staging/dist/index.html
 
 
 -----------------------------------------------------------------------------

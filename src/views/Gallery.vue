@@ -41,7 +41,7 @@ export default {
           imageAlt: "project image",
           subtitle: "Centro de Diseno y Construccion",
           description: "Santa Cruz de la Sierra, Bolivia",
-          btnLink: "http://www.arquitecturaapocaliptica.com",
+          btnLink: "https://carlosdvp.github.io/Apocaliptica/",
           btnTitle: "Arquitectura Apocaliptica",
           btnText: "Visit the Website",
           id: 1
