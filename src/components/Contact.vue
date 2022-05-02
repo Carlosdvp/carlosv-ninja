@@ -48,15 +48,14 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 #contact-info-main {
   background:  linear-gradient(
-    rgba(47, 79, 79, .7),
-    rgba(47, 79, 79, .7)
+    rgba(30, 100, 140, .8),
+    rgba(30, 100, 140, .9)
   ),
-  url('../assets/abstract-texture.jpg');
+  url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -6,15 +6,11 @@
     <header class="jumbotron">
       <h1>Carlos V</h1>
       <hr>
-      <h3 id="sub-title">Software Developer &nbsp; | &nbsp; Front End Focus</h3>
+      <h3 id="sub-title">Front End Dev &nbsp; | &nbsp; Software Developer</h3>
       <div id="header-intro">
         <p>This site was built using Vue and CSS Grid.</p>
       </div>
     </header>
-  <!-- End of the Jumbotron section -->
-  <!-- Start Contact Section -->
-    <contactMe></contactMe>
-  <!-- End Contact Section -->
   </div>
 
 </template>
@@ -73,12 +69,13 @@ header hr {
 .jumbotron {
   padding: 6rem 0;
   background:  linear-gradient(
-    rgba(50, 100, 100, .7),
-    rgba(50, 100, 100, .7)
+    rgba(50, 80, 200, .9),
+    rgba(30, 100, 140, .8)
   ),
   url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 77vh;
 }
 
 

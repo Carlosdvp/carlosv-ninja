@@ -1,6 +1,6 @@
 
 <template>
-  <footer class="container-fluid footer py-3 bg-dark">
+  <footer class="footer">
     <p><small><a id="main-footer-link" class="links" href="https://www.carlosv.dev" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2022</small></p>
   </footer>
 </template>
@@ -14,7 +14,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 a#main-footer-link:hover,
@@ -39,12 +38,13 @@ footer p  {
 
 footer {
   background:  linear-gradient(
-    rgba(4, 8, 8, .7),
-    rgba(4, 8, 8, .85)
+    rgba(4, 8, 8, .6),
+    rgba(4, 8, 8, .9)
   ),
   url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 1px black solid;
 }
 
 </style>

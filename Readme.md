@@ -42,6 +42,8 @@ npm run serve
   - remove simple exercises
   - remove simple apps with no realworld biz use
   - best to have 2 or 3 professional looking projects than a bunch of silly exercises
+6. Make the layout responsive
+  - especially the vh of the .jumbotron
 
 
 ### 1. Migrate from Vue 2 to Vue 3
@@ -50,6 +52,19 @@ npm run serve
   - this seems to have updated all the necessary packages
 - deleted node_modules and then re-installed dependencies
 - now it renders. but the code for the router needs to be upgraded
+  - uninstall previous vue-router package, remove main.js references to the router
   - install vue-router: `vue add router`
   - manually edit the router/index.js files
+- moved all the routes to the router.index.js file
+- updated all component paths
 
+- unrealted: 
+  - I edoted some of the styles to make it look cleaner and more uniform in its color scheme
+  - Also made some changes to the Homepage text
+  - fixed link in the footer to live site
+
+### 2. Add Vuex to project
+
+- installed the vuex package with npm: `npm install vuex@next`
+- created the store folder and the store/index.js file
+- updated that file and the main.js file to use the store
