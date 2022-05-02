@@ -27,18 +27,29 @@ npm run serve
 
 -----------------------------------------------------------------------------
 
-# Improvement Roadmap
+# Improvement Roadmap - 2022
 
-- Migrate from Vue 2 to Vue 3
-- Implement Vuex 4 store for the data used in the Cards
-- Move all repeated code out of the components
+1. Migrate from Vue 2 to Vue 3
+2. Implement Vuex 4 store for the data used in the Cards
+3. Move all repeated code out of the components
   - either to a parent component 
   - or to the store
-- Implement the following features:
+4. Implement the following features:
   - the ability to select between List and Grid view in the projects section
   - make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
-- cull projects shown
+5. cull projects shown
   - only show complex and complete applications
   - remove simple exercises
   - remove simple apps with no realworld biz use
   - best to have 2 or 3 professional looking projects than a bunch of silly exercises
+
+
+### 1. Migrate from Vue 2 to Vue 3
+
+- ran the command `vue add vue-next`
+  - this seems to have updated all the necessary packages
+- deleted node_modules and then re-installed dependencies
+- now it renders. but the code for the router needs to be upgraded
+  - install vue-router: `vue add router`
+  - manually edit the router/index.js files
+
