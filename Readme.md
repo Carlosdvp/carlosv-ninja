@@ -23,3 +23,22 @@ npm run serve
   - set up a test branch, so I don't break my website by changing stuff on prod
   - get it to redirect carlosv.dev to www.carlosv.dev; right now I have to type in the www using the root name directly goes nowhere.
   - might also need a subdomain for testing, something like development.carlosv.dev
+
+
+-----------------------------------------------------------------------------
+
+# Improvement Roadmap
+
+- Migrate from Vue 2 to Vue 3
+- Implement Vuex 4 store for the data used in the Cards
+- Move all repeated code out of the components
+  - either to a parent component 
+  - or to the store
+- Implement the following features:
+  - the ability to select between List and Grid view in the projects section
+  - make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
+- cull projects shown
+  - only show complex and complete applications
+  - remove simple exercises
+  - remove simple apps with no realworld biz use
+  - best to have 2 or 3 professional looking projects than a bunch of silly exercises

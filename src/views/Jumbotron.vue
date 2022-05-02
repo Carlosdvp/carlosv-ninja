@@ -6,10 +6,9 @@
     <header class="jumbotron">
       <h1>Carlos V</h1>
       <hr>
-      <h3 id="sub-title">Web Designer &nbsp; | &nbsp; Front End Developer</h3>
+      <h3 id="sub-title">Software Developer &nbsp; | &nbsp; Front End Focus</h3>
       <div id="header-intro">
-        <p>On this page you will find some of the things I've made, enjoy!</p>
-        <p>This site was built with Vue and CSS Grid.</p>
+        <p>This site was built using Vue and CSS Grid.</p>
       </div>
     </header>
   <!-- End of the Jumbotron section -->
