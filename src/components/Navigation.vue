@@ -1,38 +1,34 @@
 
 <template>
-<!-- Navbar Section -->
-<nav class="container">
+  <nav class="container">
 
-	<a class="navbar-brand" href="/">
-		<img id="logo-navbrand" src="../assets/logo.png" alt="logo">
-		<p class="logo-text">Carlos V</p> 
-	</a>
+  	<a class="navbar-brand" href="/">
+  		<img id="logo-navbrand" src="../assets/logo.png" alt="logo">
+  		<p class="logo-text">Carlos V</p> 
+  	</a>
 
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="burger-menu">
-    <img id="burger" src="../assets/menu.svg" alt="burger icon">
-  </label>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="burger-menu">
+      <img id="burger" src="../assets/menu.svg" alt="burger icon">
+    </label>
 
-	<div class="navbar">
+  	<div class="navbar">
 
-		<ul class="navbar-nav">
-			<li class="nav-item-1">
-				<router-link to="/" class="nav-link">Home</router-link>
-			</li>
-			<li class="nav-item-2">
-				<router-link to="/portfolio" class="nav-link">Portfolio</router-link>
-			</li>
-			<li class="nav-item-3">
-				<router-link to="/about" class="nav-link">About</router-link>>
-			</li>
-		</ul>
+  		<ul class="navbar-nav">
+  			<li class="nav-item-1">
+  				<router-link to="/" class="nav-link">Home</router-link>
+  			</li>
+  			<li class="nav-item-2">
+  				<router-link to="/portfolio" class="nav-link">Portfolio</router-link>
+  			</li>
+  			<li class="nav-item-3">
+  				<router-link to="/about" class="nav-link">About</router-link>>
+  			</li>
+  		</ul>
 
-	</div>
+  	</div>
 
-</nav>
-<!-- End of the Navbar section -->
-
-
+  </nav>
 </template>
 
 

@@ -65,6 +65,13 @@ npm run serve
 
 ### 2. Add Vuex to project
 
+created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-implement-vuex-store
+
 - installed the vuex package with npm: `npm install vuex@next`
 - created the store folder and the store/index.js file
 - updated that file and the main.js file to use the store
+
+- of the project views, only the first one is working, showing the correct path: localhost:8080/portfolio/project-1
+  - the others show only: localhost:8080/project-2
+  - the problem has to be with nested routing
+  - well, it wasn't, I just had to make sure the card.href matched the route path in the router file
