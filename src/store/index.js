@@ -71,6 +71,7 @@ const store = createStore({
     ],
     projects: [
     	{
+    		id: 1,
         href: "https://carlosdvp.github.io/Apocaliptica/",
         linkTitle: "Arquitectura Apocaliptica - Top Section",
         image: require("../../public/images/Apocaliptica-1.jpg"),
@@ -85,6 +86,7 @@ const store = createStore({
         btnTitle: "Arquitectura Apocaliptica"
       },
       {
+      	id: 2,
         href: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
         linkTitle: "Pricefeed",
         image: require("../../public/images/BTC_ETH.jpg"),
@@ -99,6 +101,7 @@ const store = createStore({
         btnTitle: "BTC-ETH Pricefeed"
       },
       {
+      	id: 3,
         href: "https://birdapp-clone.herokuapp.com/",
         linkTitle: "Bird app clone",
         image: require("../../public/images/bird.jpg"),
@@ -111,6 +114,7 @@ const store = createStore({
         btnTitle: "Vue 3 App project"
       },
       {
+      	id: 4,
         href: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
         linkTitle: "Chuck Facts App",
         image: require("../../public/images/chuck-facts.png"),
@@ -123,6 +127,7 @@ const store = createStore({
         btnTitle: "Chuck Norris Facts"
       },
       {
+      	id: 5,
         href: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
         linkTitle: "Color Changing Grid",
         image: require("../../public/images/color-grid.png"),
@@ -137,8 +142,36 @@ const store = createStore({
     ]
 	},
 	mutations: {
+		GET_TITLE (state, payload) {
+			let project = state.projects.find((project) => {
+				let title;
+
+				if ((project.id - 1) === payload) {
+					title = project.title
+				}
+				console.log(title)
+				return title
+			})
+		},
+		GET_ID (state, index) {
+			let project = state.projects.find((project) => {
+				let id;
+
+				if ((project.id - 1) === index) {
+					id = project.id
+				}
+				console.log(id)
+				return id
+			})
+		}
 	},
 	actions: {
+		getTitle({ commit }, payload) {
+			commit('GET_TITLE', payload)
+		},
+		getTheId({ commit }, payload) {
+			commit('GET_ID', payload)
+		}
 	}
 })
 

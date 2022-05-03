@@ -1,33 +1,32 @@
 <template>
 
-<div class="gallery-page">
-  <h1 id="gallery-title">Project Gallery</h1>
-  
-  <div class="main-gallery">
+  <div class="gallery-page">
+    <h1 id="gallery-title">Project Gallery</h1>
+    
+    <div class="main-gallery">
 
-    <div class="card" v-for="card in cards">
-      <h4>{{ card.header }}</h4>
-      <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
-        <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-      </router-link>
-      <div>
-        <h5>{{ card.subtitle }}</h5>
-        <p>{{ card.description }}</p>
+      <div class="card" v-for="card in cards">
+        <h4>{{ card.header }}</h4>
+        <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
+          <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
+        </router-link>
+        <div>
+          <h5>{{ card.subtitle }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+        <div class="btn">
+          <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
+        </div>
       </div>
-      <div class="btn">
-        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
-      </div>
+
     </div>
-
   </div>
-</div>
 
 </template>
 
 
 
 <script>
-
 export default {
   name: 'Gallery',
   data() {

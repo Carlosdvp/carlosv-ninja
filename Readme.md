@@ -76,7 +76,52 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - the problem has to be with nested routing
   - well, it wasn't, I just had to make sure the card.href matched the route path in the router file
 
+-----------------------------------------------------------------------------------
+#### The Cards
+
 * Discovered that the 'Card' component does nothing at all exceot take space.
   - the individual project views are the ones being rendered
   - First, I should move the projects data to the store
   - Then I can go about removing all the project views and only using the Card component, as was originally intended.
+
+- Current Status:
+  1. Gallery component uses the data from state.cards to generate the Gallery cards, one per project
+  2. Each project view has the card's data in its data property, and the 'Card' CSS is repeated in all the project views
+  3. Project view used the data for the project included in the data() method for each component
+  4. Pictures link to the project view
+
+- Desired Final Form:
+  1. This is fine, by moving the data to the store this part is now good.
+  2. Moved all the projects data into the store
+    - used the Card comonent that wasn't being used in each of the prject views
+    - this allowed me to remove the data prperty from them
+    - and to remove all the CSS, since it was the same as the Card component's
+    - Now the project views are small and cleaner, no repeated code
+    - And the Card component is doing the job it was made to do.
+
+
+
+
+
+
+  3. Right now when you click on one project the view it takes you to renders all projects, I need to make it so that only the one clicked on is rendered. To complete this task I need to:
+
+  - get one card to render one project
+  - can this be done with props?
+  - or maybe getters?
+    - since doing the following doesn't work: `this.$store.state.projects[0]`
+  
+  - this is the reason all the projects render when one is clicked on
+  `v-for="project in projects"`
+
+  - there has to be a way to grab one project, maybe based on the id, in which case the v-for may not be needed here
+
+  - or maybe a computed property or method that only calls one project based on the id
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------

@@ -1,15 +1,13 @@
 <template>
 
-<div>
-
-  <div class="card" v-for="project in projects">
+  <div class="card" v-for="(project, index) in projects" :key="index" @click="getTheId(project, index)">
 
     <a :href="project.href" data-toggle="tooltip" title="" target="_blank">
       <img class="gallery-image img-thumbnail" :src="project.image" :alt="project.imageAlt">
     </a>
 
-    <div>
-      <h2>{{ project.title}}</h2>
+    <div @click="getTitle(project, index)">
+      <h2>{{ project.title }}</h2>
       <h5>{{ project.subtitle }}</h5>
       <p>{{ project.subtitleTwo }}</p>
       <div id="description">
@@ -26,23 +24,30 @@
       </ul>
     </div>
     <div class="btn">
-      <a :href="project.btnLink" :title="btnTitle" target="_blank">Visit the Website</a>
+      <a :href="project.btnLink" :title="project.btnTitle" target="_blank">Visit the Website</a>
     </div>
 
   </div>
-
-</div>
 
 </template>
 
 
 <script>
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Card',
   data() {
     return {
       projects: this.$store.state.projects
+    }
+  },
+  methods: {
+    getTitle(project, index) {
+      this.$store.dispatch('getTitle', index)
+    },
+    getTheId(project, index) {
+      this.$store.dispatch('getTheId', index)
     }
   }
 }
