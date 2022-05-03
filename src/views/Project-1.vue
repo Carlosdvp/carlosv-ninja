@@ -1,6 +1,6 @@
 <template>
 
-  <Card />
+  <Card :project="project"/>
 
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: "Project-1",
   components: {
     Card
+  },
+  data() {
+    return {
+      project: this.$store.state.projects[0]
+    }
   }
 }
 

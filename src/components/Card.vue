@@ -1,12 +1,12 @@
 <template>
 
-  <div class="card" v-for="(project, index) in projects" :key="index" @click="getTheId(project, index)">
+  <div class="card">
 
     <a :href="project.href" data-toggle="tooltip" title="" target="_blank">
       <img class="gallery-image img-thumbnail" :src="project.image" :alt="project.imageAlt">
     </a>
 
-    <div @click="getTitle(project, index)">
+    <div>
       <h2>{{ project.title }}</h2>
       <h5>{{ project.subtitle }}</h5>
       <p>{{ project.subtitleTwo }}</p>
@@ -22,6 +22,7 @@
           {{ tech }}          
         </li>
       </ul>
+      <p>Project ID: {{ project.id }}</p>
     </div>
     <div class="btn">
       <a :href="project.btnLink" :title="project.btnTitle" target="_blank">Visit the Website</a>
@@ -33,23 +34,10 @@
 
 
 <script>
-import { mapGetters } from 'vuex'
 
 export default {
   name: 'Card',
-  data() {
-    return {
-      projects: this.$store.state.projects
-    }
-  },
-  methods: {
-    getTitle(project, index) {
-      this.$store.dispatch('getTitle', index)
-    },
-    getTheId(project, index) {
-      this.$store.dispatch('getTheId', index)
-    }
-  }
+  props: ['project']
 }
 
 </script>

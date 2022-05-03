@@ -152,27 +152,14 @@ const store = createStore({
 				console.log(title)
 				return title
 			})
-		},
-		GET_ID (state, index) {
-			let project = state.projects.find((project) => {
-				let id;
-
-				if ((project.id - 1) === index) {
-					id = project.id
-				}
-				console.log(id)
-				return id
-			})
 		}
 	},
 	actions: {
 		getTitle({ commit }, payload) {
 			commit('GET_TITLE', payload)
-		},
-		getTheId({ commit }, payload) {
-			commit('GET_ID', payload)
 		}
-	}
+	},
+	getters: {}
 })
 
 export default store

@@ -119,6 +119,12 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - or maybe a computed property or method that only calls one project based on the id
 
 
+Ok, so I couldn't get the getters to work, I ended up using actions and mutations (maybe there is a better way, but this does the trick for now).
+I tested by creating methods to grab the project title and the project id; this works fine as far as rendering the correct index and ID on each project's card, when logging to the console I get the project I clicked on plus a number of undefined equal to the number of previous projects. So if I click on #4 I get 3 undefined.
+
+I tried using v-if, but unless the condition is true for the first project nothing renders.
+
+
 
 
 
