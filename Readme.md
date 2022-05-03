@@ -29,6 +29,7 @@ npm run serve
 
 # Improvement Roadmap - 2022
 
+`
 1. Migrate from Vue 2 to Vue 3
 2. Implement Vuex 4 store for the data used in the Cards
   - Move all repeated code out of the components
@@ -44,7 +45,7 @@ npm run serve
   - best to have 2 or 3 professional looking projects than a bunch of silly exercises
 5. Make the layout responsive
   - especially the vh of the .jumbotron
-
+`
 
 ### 1. Migrate from Vue 2 to Vue 3
 
@@ -59,7 +60,7 @@ npm run serve
 - updated all component paths
 
 - unrealted: 
-  - I edoted some of the styles to make it look cleaner and more uniform in its color scheme
+  - I edited some of the styles to make it look cleaner and more uniform in its color scheme
   - Also made some changes to the Homepage text
   - fixed link in the footer to live site
 
@@ -71,63 +72,41 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 - created the store folder and the store/index.js file
 - updated that file and the main.js file to use the store
 
-- of the project views, only the first one is working, showing the correct path: localhost:8080/portfolio/project-1
-  - the others show only: localhost:8080/project-2
-  - the problem has to be with nested routing
-  - well, it wasn't, I just had to make sure the card.href matched the route path in the router file
+- project views: only the first one was showing the correct path: localhost:8080/portfolio/project-1
+  - I just had to make sure the card.href matched the route path in the router file
 
------------------------------------------------------------------------------------
-#### The Cards
+  *The Cards*
 
-* Discovered that the 'Card' component does nothing at all exceot take space.
-  - the individual project views are the ones being rendered
-  - First, I should move the projects data to the store
-  - Then I can go about removing all the project views and only using the Card component, as was originally intended.
+  * Discovered that the 'Card' component does nothing at all except take space.
+    - the individual project views are the ones being rendered
+    - First, I should move the projects data to the store
+    - Then I can go about removing all the project views and only using the Card component, as was originally intended.
 
-- Current Status:
-  1. Gallery component uses the data from state.cards to generate the Gallery cards, one per project
-  2. Each project view has the card's data in its data property, and the 'Card' CSS is repeated in all the project views
-  3. Project view used the data for the project included in the data() method for each component
-  4. Pictures link to the project view
+  *Current Status:*
 
-- Desired Final Form:
-  1. This is fine, by moving the data to the store this part is now good.
-  2. Moved all the projects data into the store
-    - used the Card comonent that wasn't being used in each of the prject views
-    - this allowed me to remove the data prperty from them
-    - and to remove all the CSS, since it was the same as the Card component's
-    - Now the project views are small and cleaner, no repeated code
-    - And the Card component is doing the job it was made to do.
+    1. Gallery component uses the data from state.cards to generate the Gallery cards, one per project
+    2. Each project view has the card's data in its data property, and the 'Card' CSS is repeated in all the project views
+    3. Project view used the data for the project included in the data() method for each component
+    4. Pictures link to the project view
 
+  *Desired Final Form:*
 
+    1. This is fine, by moving the data to the store this part is now good.
+    2. Moved all the projects data into the store
+      - used the Card comonent that wasn't being used in each of the prject views
+      - this allowed me to remove the data prperty from them
+      - and to remove all the CSS, since it was the same as the Card component's
+      - Now the project views are small and cleaner, no repeated code
+      - And the Card component is doing the job it was made to do.
+    3. This resulted in a bug: when you click on the first project the view it takes you to renders all projects, and clicking on another project renders nothing.
+      - tried several things:
+        - using v-if in the Card component, would only render the views if the condition evaluated to id = 1 or index = 0 (`project.id === 1`). If I used something like `project.id === index` nothing happened, it didn't work.
+        - moving the v-if statement to the project views (the Card's parents) did nothing but move the same issue to them.
+        - trying to split the projects array in the store into individual project objects was overly complicated and did not solve the issue either.
+        - Finallly the *solution* was to simply pull the data for one project from the store inside the project view and pass that data down into the Card as a prop.
+    4. This is fine.
 
+### 3. Implement the following features:
 
-
-
-  3. Right now when you click on one project the view it takes you to renders all projects, I need to make it so that only the one clicked on is rendered. To complete this task I need to:
-
-  - get one card to render one project
-  - can this be done with props?
-  - or maybe getters?
-    - since doing the following doesn't work: `this.$store.state.projects[0]`
-  
-  - this is the reason all the projects render when one is clicked on
-  `v-for="project in projects"`
-
-  - there has to be a way to grab one project, maybe based on the id, in which case the v-for may not be needed here
-
-  - or maybe a computed property or method that only calls one project based on the id
-
-
-Ok, so I couldn't get the getters to work, I ended up using actions and mutations (maybe there is a better way, but this does the trick for now).
-I tested by creating methods to grab the project title and the project id; this works fine as far as rendering the correct index and ID on each project's card, when logging to the console I get the project I clicked on plus a number of undefined equal to the number of previous projects. So if I click on #4 I get 3 undefined.
-
-I tried using v-if, but unless the condition is true for the first project nothing renders.
-
-
-
-
-
-
-
------------------------------------------------------------------------------------
+1. the ability to select between List and Grid view in the projects section
+2. make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
