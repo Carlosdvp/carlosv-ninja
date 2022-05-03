@@ -112,5 +112,9 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - create a pair of buttons
     - each should have a label 'LIST View' or 'GRID View'
     - the button for the current view should be disabled
+  - create 2 separeate views
+    - Grid View component
+    - List View Component
+  - Grid View is the current one, keep it as is
 
 2. make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI

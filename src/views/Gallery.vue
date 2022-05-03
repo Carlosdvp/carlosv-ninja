@@ -1,14 +1,14 @@
 <template>
 
   <div class="gallery-page">
+
     <h1 id="gallery-title">Project Gallery</h1>
-    
     <div>
       <button class="btn" ref="grid" @click="addGridClass()">Grid View</button>
       <button class="btn" ref="list" @click="addListClass()">List View</button>
     </div>
 
-    <div class="main-gallery" :class="[ isList ? 'list-view' : 'grid-view' ]">
+    <div :class="[ isList ? 'list-view' : 'grid-view' ]">
       <GridView v-if="isGrid" />
       <ListView v-if="isList" />
     </div>
@@ -35,12 +35,11 @@ export default {
     }
   },
   methods: {
-    // each method will add the required class to the div containing the cards
+    // each method will add the required class to the main gallery div
     addListClass() {
       this.isList = true
       this.isGrid = false
     },
-    // first clear the List class so we get the Grid class on screen
     addGridClass() {
       this.isList = false
       this.isGrid = true
@@ -56,23 +55,6 @@ export default {
 .gallery-page {
   background-color: #676a70;
   margin: 0;
-}
-
-.main-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 1.5em;
-  margin: 0 auto;
-  padding: 4rem 6rem;
-  background:  linear-gradient(
-    rgba(50, 100, 100, .7),
-    rgba(50, 100, 100, .7)
-  ),
-  url('../assets/splatter.jpg');
-  background-repeat: round;
-  background-size: contain;
-  color: ghostwhite;
 }
 
 #gallery-title {
@@ -107,24 +89,12 @@ export default {
     font-size: .8em;
     padding: 1em;
   }
-
-  .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(150px, auto);
-  }
 }
 
 @media only screen and (max-width: 720px) {
   .btn {
     font-size: 1.3em;
     padding: 1em;
-  }
-
-  .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(150px, auto);
   }
 }
 

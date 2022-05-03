@@ -1,17 +1,20 @@
 <template>
 
-  <div class="card" v-for="card in cards">
-    <h4>{{ card.header }}</h4>
-    <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
-      <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-    </router-link>
-    <div>
-      <h5>{{ card.subtitle }}</h5>
-      <p>{{ card.description }}</p>
+  <div class="main-gallery">
+    <div class="card" v-for="card in cards">
+      <h4>{{ card.header }}</h4>
+      <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
+        <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
+      </router-link>
+      <div>
+        <h5>{{ card.subtitle }}</h5>
+        <p>{{ card.description }}</p>
+      </div>
+      <button class="btn">
+        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
+      </button>
     </div>
-    <div class="btn">
-      <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
-    </div>
+
   </div>
 
 </template>
@@ -33,6 +36,23 @@ export default {
 
 
 <style scoped>
+
+.main-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1.5em;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+  background:  linear-gradient(
+    rgba(50, 100, 100, .7),
+    rgba(50, 100, 100, .7)
+  ),
+  url('../assets/splatter.jpg');
+  background-repeat: round;
+  background-size: contain;
+  color: ghostwhite;
+}
 
 .card {
   display: grid;
@@ -92,6 +112,11 @@ a {
     font-size: .8em;
     padding: 1em;
   }
+  .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -102,6 +127,11 @@ a {
   .card {
     width: 70vw;
     justify-self: center;
+  }
+  .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(150px, auto);
   }
 }
 
