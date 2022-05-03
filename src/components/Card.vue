@@ -39,8 +39,11 @@
 <script>
 
 export default {
-  props: {
-    projects: Object
+  name: 'Card',
+  data() {
+    return {
+      projects: this.$store.state.projects
+    }
   }
 }
 

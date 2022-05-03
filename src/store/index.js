@@ -68,6 +68,72 @@ const store = createStore({
         btnText: "Visit the Project",
         id: 5
       }
+    ],
+    projects: [
+    	{
+        href: "https://carlosdvp.github.io/Apocaliptica/",
+        linkTitle: "Arquitectura Apocaliptica - Top Section",
+        image: require("../../public/images/Apocaliptica-1.jpg"),
+        imageAlt: "project image",
+        title: "Arquitectura Apocaliptica Srl",
+        subtitle: "Centro de Diseno y Construccion",
+        subtitleTwo: "Santa Cruz de la Sierra, Bolivia",
+        descriptionOne: "Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.",
+        descriptionTwo: "Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.",
+        techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
+        btnLink: "https://carlosdvp.github.io/Apocaliptica/",
+        btnTitle: "Arquitectura Apocaliptica"
+      },
+      {
+        href: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+        linkTitle: "Pricefeed",
+        image: require("../../public/images/BTC_ETH.jpg"),
+        imageAlt: "project image",
+        title: "BTC / ETH Pricefeed",
+        subtitle: "API and Websockets",
+        subtitleTwo: "Live pricefeed with the Binance API.",
+        descriptionOne: "Proof of concept app to get price information for a crypto pair using the Binance API and websockets.",
+        descriptionTwo: "Connection made with the Testnet, API calls made using Axios.",
+        techStack: ["HTML", "CSS3", "JavaScript", "VueJS", "NodeJS", "Axios"],
+        btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+        btnTitle: "BTC-ETH Pricefeed"
+      },
+      {
+        href: "https://birdapp-clone.herokuapp.com/",
+        linkTitle: "Bird app clone",
+        image: require("../../public/images/bird.jpg"),
+        imageAlt: "project image",
+        title: "Vue 3 Bird App Clone",
+        subtitleTwo: "Bird clone",
+        descriptionOne: "This is a simple clone of the blue bird app, built using Vue 3, along with Vue router and Vuex for state management. Deployed to Heroku",
+        techStack: ["HTML", "CSS3", "JavaScript", "Vue 3", "Vue router", "Vuex"],
+        btnLink: "https://birdapp-clone.herokuapp.com/",
+        btnTitle: "Vue 3 App project"
+      },
+      {
+        href: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
+        linkTitle: "Chuck Facts App",
+        image: require("../../public/images/chuck-facts.png"),
+        imageAlt: "project image",
+        title: "Chuck Norris Facts",
+        subtitleTwo: "JS Project",
+        descriptionOne: "Javascript App to consume the Chuck Norris API with Axios.",
+        techStack: ["HTML", "CSS3", "JavaScript", "Axios"],
+        btnLink: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
+        btnTitle: "Chuck Norris Facts"
+      },
+      {
+        href: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
+        linkTitle: "Color Changing Grid",
+        image: require("../../public/images/color-grid.png"),
+        imageAlt: "project image",
+        title: "Color Changing Grid",
+        subtitleTwo: "D3JS Project",
+        descriptionOne: "Grid with clickable cells that change colors once clicked, built using JS and D3js",
+        techStack: ["HTML", "CSS3", "JavaScript", "D3js"],
+        btnLink: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
+        btnTitle: "Color Changing Grid"
+      }
     ]
 	},
 	mutations: {

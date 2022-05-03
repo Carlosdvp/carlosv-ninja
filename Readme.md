@@ -31,18 +31,18 @@ npm run serve
 
 1. Migrate from Vue 2 to Vue 3
 2. Implement Vuex 4 store for the data used in the Cards
-3. Move all repeated code out of the components
-  - either to a parent component 
-  - or to the store
-4. Implement the following features:
+  - Move all repeated code out of the components
+    - either to a parent component 
+    - or to the store
+3. Implement the following features:
   - the ability to select between List and Grid view in the projects section
   - make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
-5. cull projects shown
+4. cull projects shown
   - only show complex and complete applications
   - remove simple exercises
   - remove simple apps with no realworld biz use
   - best to have 2 or 3 professional looking projects than a bunch of silly exercises
-6. Make the layout responsive
+5. Make the layout responsive
   - especially the vh of the .jumbotron
 
 
@@ -75,3 +75,8 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - the others show only: localhost:8080/project-2
   - the problem has to be with nested routing
   - well, it wasn't, I just had to make sure the card.href matched the route path in the router file
+
+* Discovered that the 'Card' component does nothing at all exceot take space.
+  - the individual project views are the ones being rendered
+  - First, I should move the projects data to the store
+  - Then I can go about removing all the project views and only using the Card component, as was originally intended.
