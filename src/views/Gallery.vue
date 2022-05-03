@@ -3,24 +3,14 @@
   <div class="gallery-page">
     <h1 id="gallery-title">Project Gallery</h1>
     
-    <button></button>
+    <div>
+      <button class="btn" ref="grid" @click="addGridClass()">Grid View</button>
+      <button class="btn" ref="list" @click="addListClass()">List View</button>
+    </div>
 
-    <div class="main-gallery">
-
-      <div class="card" v-for="card in cards">
-        <h4>{{ card.header }}</h4>
-        <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
-          <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-        </router-link>
-        <div>
-          <h5>{{ card.subtitle }}</h5>
-          <p>{{ card.description }}</p>
-        </div>
-        <div class="btn">
-          <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
-        </div>
-      </div>
-
+    <div class="main-gallery" :class="[ isList ? 'list-view' : 'grid-view' ]">
+      <GridView v-if="isGrid" />
+      <ListView v-if="isList" />
     </div>
   </div>
 
@@ -29,11 +19,31 @@
 
 
 <script>
+import GridView from '@/views/Grid.vue'
+import ListView from '@/views/List.vue'
+
 export default {
   name: 'Gallery',
+  components: {
+    GridView,
+    ListView
+  },
   data() {
     return {
-      cards: this.$store.state.cards
+      isList: false,
+      isGrid: true
+    }
+  },
+  methods: {
+    // each method will add the required class to the div containing the cards
+    addListClass() {
+      this.isList = true
+      this.isGrid = false
+    },
+    // first clear the List class so we get the Grid class on screen
+    addGridClass() {
+      this.isList = false
+      this.isGrid = true
     }
   }
 }
@@ -73,34 +83,7 @@ export default {
   margin: 0;
   padding: 0.3em 0;
   letter-spacing: .15em;
-}
-
-.card {
-  display: grid;
-  grid-template-columns: 100%;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: .5em;
-}
-
-.gallery-image {
-  background: rgba(12, 77, 105, .2);
-  width: 80%;
-  height: 50vh;
-  object-fit: cover;
-}
-
-div {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
- 
-.img-thumbnail {
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: 1em;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .btn {
@@ -108,24 +91,15 @@ div {
   background: transparent;
   border: 2px solid #0099CC;
   border-radius: 6px;
-  margin: 0 0 1em;
-  width: 60%;
-  padding: 1em 0;
+  margin: 1.5rem 0.3rem 1rem;
+  width: 10%;
+  padding: 0.5rem 0;
+  color: ghostwhite;
+  font-size: 1rem;
 }
 
 .btn:hover {
   background: #0099CC;
-}
-
-a {
-  color: ghostwhite;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-
-.btn a {
-  padding: 1em 2em;
 }
 
 @media only screen and (max-width: 1090px) {
@@ -142,7 +116,7 @@ a {
 }
 
 @media only screen and (max-width: 720px) {
-  .btn a {
+  .btn {
     font-size: 1.3em;
     padding: 1em;
   }
@@ -152,15 +126,10 @@ a {
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(150px, auto);
   }
-
-  .card {
-    width: 70vw;
-    justify-self: center;
-  }
 }
 
 @media only screen and (max-width: 721px) {
-  .btn a {
+  .btn {
     font-size: .8em;
   }
 }
