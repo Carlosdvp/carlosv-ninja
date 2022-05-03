@@ -3,6 +3,8 @@
   <div class="gallery-page">
     <h1 id="gallery-title">Project Gallery</h1>
     
+    <button></button>
+
     <div class="main-gallery">
 
       <div class="card" v-for="card in cards">

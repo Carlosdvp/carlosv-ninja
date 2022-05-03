@@ -2,7 +2,6 @@
 <template>
 
   <div>
-  <!-- Jumbotron / Header section -->
     <header class="jumbotron">
       <h1>Carlos V</h1>
       <hr>
@@ -17,13 +16,8 @@
 
 <script>
 
-import ContactMe from '@/components/Contact.vue'
-
 export default {
-  name: 'Jumbotron',
-  components: {
-    ContactMe
-  }
+  name: 'Jumbotron'
 }
 
 </script>

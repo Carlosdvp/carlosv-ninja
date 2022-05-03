@@ -109,4 +109,8 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 ### 3. Implement the following features:
 
 1. the ability to select between List and Grid view in the projects section
+  - create a pair of buttons
+    - each should have a label 'LIST View' or 'GRID View'
+    - the button for the current view should be disabled
+
 2. make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
