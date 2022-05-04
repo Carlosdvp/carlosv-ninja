@@ -43,9 +43,7 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
   - some styles may need to be global to eliminate too much repetition of the same stuff
 5. cull projects shown
   - only show complex and complete applications
-  - remove simple exercises
-  - remove simple apps with no realworld biz use
-  - best to have 2 or 3 professional looking projects than a bunch of silly exercises
+  - remove simple exercises, apps with no realworld biz use
 
 
 --------------------------------------------------------------------------
@@ -127,3 +125,17 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 3. make the layout responsive
 4. make less colorful, make the style sharper and more professional.
 
+
+### 5. cull projects shown
+  - only show complex and complete applications
+  - remove simple exercises, apps with no realworld biz use
+
+  - Keep: 
+    - Arquitetura
+    - BTC pricefeed
+    - Brid app clone
+  - Removed:
+    - Chuck Norris Facts
+    - Color changing Grid
+
+********************************************************

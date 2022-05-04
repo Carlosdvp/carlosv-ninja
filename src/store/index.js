@@ -17,21 +17,8 @@ const store = createStore({
         id: 1
       },
       {
-        header: "BTC / ETH Pricefeed",
-        href: "/portfolio/project-2",
-        title: "Pricefeed",
-        image: require("../../public/images/BTC_ETH.jpg"),
-        imageAlt: "BTC and ETH coins",
-        subtitle: "API and Websockets",
-        description: "Live pricefeed with the Binance API.",
-        btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
-        btnTitle: "Pricefeed",
-        btnText: "Visit the Project",
-        id: 2
-      },
-      {
         header: "Vue 3 Bird app Clone",
-        href: "/portfolio/project-3",
+        href: "/portfolio/project-2",
         title: "Vue app project",
         image: require("../../public/images/bird.jpg"),
         imageAlt: "Some bird",
@@ -40,33 +27,20 @@ const store = createStore({
         btnLink: "https://birdapp-clone.herokuapp.com/",
         btnTitle: "Bird app clone",
         btnText: "Visit the Project",
+        id: 2
+      },
+      {
+        header: "BTC / ETH Pricefeed",
+        href: "/portfolio/project-3",
+        title: "Pricefeed",
+        image: require("../../public/images/BTC_ETH.jpg"),
+        imageAlt: "BTC and ETH coins",
+        subtitle: "API and Websockets",
+        description: "Live pricefeed with the Binance API.",
+        btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+        btnTitle: "Pricefeed",
+        btnText: "Visit the Project",
         id: 3
-      },
-      {
-        header: "Chuck Norris Fact Generator",
-        href: "/portfolio/project-4",
-        title: "Chuck Facts App",
-        image: require("../../public/images/chuck-facts.png"),
-        imageAlt: "Chuck Norris Facts",
-        subtitle: "JS Project",
-        description: "App to consume the Chuck Norris API with Axios",
-        btnLink: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
-        btnTitle: "Chuck Norris Facts",
-        btnText: "Visit the Project",
-        id: 4
-      },
-      {
-        header: "Clickable Color Changing Grid",
-        href: "/portfolio/project-5",
-        title: "Color Changing Grid",
-        image: require("../../public/images/color-grid.png"),
-        imageAlt: "Colored grid",
-        subtitle: "D3JS Project",
-        description: "Grid with clickable cells",
-        btnLink: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
-        btnTitle: "Colored Grid",
-        btnText: "Visit the Project",
-        id: 5
       }
     ],
     projects: [
@@ -87,21 +61,6 @@ const store = createStore({
       },
       {
       	id: 2,
-        href: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
-        linkTitle: "Pricefeed",
-        image: require("../../public/images/BTC_ETH.jpg"),
-        imageAlt: "project image",
-        title: "BTC / ETH Pricefeed",
-        subtitle: "API and Websockets",
-        subtitleTwo: "Live pricefeed with the Binance API.",
-        descriptionOne: "Proof of concept app to get price information for a crypto pair using the Binance API and websockets.",
-        descriptionTwo: "Connection made with the Testnet, API calls made using Axios.",
-        techStack: ["HTML", "CSS3", "JavaScript", "VueJS", "NodeJS", "Axios"],
-        btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
-        btnTitle: "BTC-ETH Pricefeed"
-      },
-      {
-      	id: 3,
         href: "https://birdapp-clone.herokuapp.com/",
         linkTitle: "Bird app clone",
         image: require("../../public/images/bird.jpg"),
@@ -114,31 +73,35 @@ const store = createStore({
         btnTitle: "Vue 3 App project"
       },
       {
-      	id: 4,
-        href: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
-        linkTitle: "Chuck Facts App",
-        image: require("../../public/images/chuck-facts.png"),
+      	id: 3,
+        href: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+        linkTitle: "Pricefeed",
+        image: require("../../public/images/BTC_ETH.jpg"),
         imageAlt: "project image",
-        title: "Chuck Norris Facts",
-        subtitleTwo: "JS Project",
-        descriptionOne: "Javascript App to consume the Chuck Norris API with Axios.",
-        techStack: ["HTML", "CSS3", "JavaScript", "Axios"],
-        btnLink: "https://carlosdvp.github.io/Chuck-Fact-Generator/",
-        btnTitle: "Chuck Norris Facts"
-      },
-      {
-      	id: 5,
-        href: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
-        linkTitle: "Color Changing Grid",
-        image: require("../../public/images/color-grid.png"),
-        imageAlt: "project image",
-        title: "Color Changing Grid",
-        subtitleTwo: "D3JS Project",
-        descriptionOne: "Grid with clickable cells that change colors once clicked, built using JS and D3js",
-        techStack: ["HTML", "CSS3", "JavaScript", "D3js"],
-        btnLink: "https://carlosdvp.github.io/Color-Changing-Squares-with-D3/",
-        btnTitle: "Color Changing Grid"
+        title: "BTC / ETH Pricefeed",
+        subtitle: "API and Websockets",
+        subtitleTwo: "Live pricefeed with the Binance API.",
+        descriptionOne: "Proof of concept app to get price information for a crypto pair using the Binance API and websockets.",
+        descriptionTwo: "Connection made with the Testnet, API calls made using Axios.",
+        techStack: ["HTML", "CSS3", "JavaScript", "VueJS", "NodeJS", "Axios"],
+        btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
+        btnTitle: "BTC-ETH Pricefeed"
       }
+      // Saving an emptytemplate for tuture projects
+      //
+      // {
+      // 	id: 4,
+      //   href: "",
+      //   linkTitle: "",
+      //   image: require(""),
+      //   imageAlt: "project image",
+      //   title: "",
+      //   subtitleTwo: "",
+      //   descriptionOne: "",
+      //   techStack: ["HTML", "CSS3", "JavaScript", ""],
+      //   btnLink: "",
+      //   btnTitle: ""
+      // }
     ]
 	},
 	mutations: {
