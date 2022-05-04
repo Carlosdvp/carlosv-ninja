@@ -46,11 +46,12 @@ export default {
     }
   }
 }
+
 </script>
 
 
 
-<style scoped>
+<style>
 
 .gallery-page {
   background-color: #676a70;
@@ -61,7 +62,7 @@ export default {
   color: ghostwhite;
   text-shadow: darkred 1px 1px;
   font-family: serif;
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0;
   padding: 0.3em 0;
   letter-spacing: .15em;
@@ -78,27 +79,26 @@ export default {
   padding: 0.5rem 0;
   color: ghostwhite;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .btn:hover {
   background: #0099CC;
 }
 
-@media only screen and (max-width: 1090px) {
-  .btn a {
-    font-size: .8em;
-    padding: 1em;
-  }
-}
+/*********************
+Media Querries
+**********************/
 
 @media only screen and (max-width: 720px) {
   .btn {
-    font-size: 1.3em;
-    padding: 1em;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 15%;
   }
 }
 
-@media only screen and (max-width: 721px) {
+@media only screen and (max-width: 480px) {
   .btn {
     font-size: .8em;
   }

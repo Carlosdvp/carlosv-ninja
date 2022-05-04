@@ -7,7 +7,7 @@
       <hr>
       <h3 id="sub-title">Front End Dev &nbsp; | &nbsp; Software Developer</h3>
       <div id="header-intro">
-        <p>This site was built using Vue and CSS Grid.</p>
+        <p>This site was built using Vue 3 and CSS Grid.</p>
       </div>
     </header>
   </div>
@@ -71,6 +71,5 @@ header hr {
   background-size: cover;
   height: 77vh;
 }
-
 
 </style>

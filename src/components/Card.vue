@@ -22,7 +22,6 @@
           {{ tech }}          
         </li>
       </ul>
-      <p>Project ID: {{ project.id }}</p>
     </div>
     <div class="btn">
       <a :href="project.btnLink" :title="project.btnTitle" target="_blank">Visit the Website</a>

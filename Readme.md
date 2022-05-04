@@ -5,8 +5,8 @@ This project is meant to upgrade the architecture of my portfolio site and imple
 Which will also serve to reduce the dependence on old tech like jQuery and increasingly irrelevant tech like Bootstrap. Both may have been a good solution to many problems in the past, but current web standards make these 2 technologies less and less necessary.
 
 
-### to run the dev server
-npm run serve
+- to run the dev server
+- npm run serve
 
 
 -----------------------------------------------------------------------------
@@ -29,23 +29,26 @@ npm run serve
 
 # Improvement Roadmap - 2022
 
-`
+
 1. Migrate from Vue 2 to Vue 3
 2. Implement Vuex 4 store for the data used in the Cards
   - Move all repeated code out of the components
     - either to a parent component 
     - or to the store
-3. Implement the following features:
-  - the ability to select between List and Grid view in the projects section
+3. Add the ability to select between List and Grid view in the projects gallery
+4. Fix the Styling
+  - make the layout responsive
   - make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
-4. cull projects shown
+  - and clean up the css
+  - some styles may need to be global to eliminate too much repetition of the same stuff
+5. cull projects shown
   - only show complex and complete applications
   - remove simple exercises
   - remove simple apps with no realworld biz use
   - best to have 2 or 3 professional looking projects than a bunch of silly exercises
-5. Make the layout responsive
-  - especially the vh of the .jumbotron
-`
+
+
+--------------------------------------------------------------------------
 
 ### 1. Migrate from Vue 2 to Vue 3
 
@@ -59,7 +62,7 @@ npm run serve
 - moved all the routes to the router.index.js file
 - updated all component paths
 
-- unrealted: 
+- unrelated: 
   - I edited some of the styles to make it look cleaner and more uniform in its color scheme
   - Also made some changes to the Homepage text
   - fixed link in the footer to live site
@@ -106,15 +109,21 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
         - Finallly the *solution* was to simply pull the data for one project from the store inside the project view and pass that data down into the Card as a prop.
     4. This is fine.
 
-### 3. Implement the following features:
+### 3. Add the ability to select between List and Grid view in the projects gallery
 
-1. the ability to select between List and Grid view in the projects section
   - create a pair of buttons
     - each should have a label 'LIST View' or 'GRID View'
-    - the button for the current view should be disabled
+    - the button for the current view should be disabled (optional)
   - create 2 separeate views
     - Grid View component
     - List View Component
-  - Grid View is the current one, keep it as is
+  - Grid View is the default view I had in the Gallery component, move this to the Grid View component.
 
-2. make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
+
+### 4. Fix the Styling
+
+1. clean up the css
+2. some styles may need to be global to eliminate too much repetition of the same stuff
+3. make the layout responsive
+4. make less colorful, make the style sharper and more professional.
+

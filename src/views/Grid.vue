@@ -14,7 +14,6 @@
         <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
       </button>
     </div>
-
   </div>
 
 </template>
@@ -31,6 +30,7 @@ export default {
     }
   }
 }
+
 </script>
 
 
@@ -83,17 +83,9 @@ div {
 }
 
 .btn {
-  justify-self: center;
-  background: transparent;
-  border: 2px solid #0099CC;
-  border-radius: 6px;
   margin: 0 0 1em;
   width: 60%;
   padding: 1em 0;
-}
-
-.btn:hover {
-  background: #0099CC;
 }
 
 a {
@@ -103,15 +95,11 @@ a {
   height: 100%;
 }
 
-.btn a {
-  padding: 1em 2em;
-}
+/*********************
+Media Querries
+**********************/
 
-@media only screen and (max-width: 1090px) {
-  .btn a {
-    font-size: .8em;
-    padding: 1em;
-  }
+@media only screen and (max-width: 1080px) {
   .main-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -120,10 +108,6 @@ a {
 }
 
 @media only screen and (max-width: 720px) {
-  .btn a {
-    font-size: 1.3em;
-    padding: 1em;
-  }
   .card {
     width: 70vw;
     justify-self: center;
@@ -135,9 +119,18 @@ a {
   }
 }
 
-@media only screen and (max-width: 721px) {
-  .btn a {
-    font-size: .8em;
+@media only screen and (max-width:500px) {
+  .card {
+    width: 70vw;
+    justify-self: center;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+  .main-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    padding: 0;
   }
 }
 

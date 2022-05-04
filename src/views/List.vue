@@ -47,7 +47,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   color: ghostwhite;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
 
 /* CARD DIVs - CSS Grid */
@@ -98,15 +98,9 @@ div {
 }
 
 .btn {
-  background: transparent;
-  border: 2px solid #0099CC;
-  border-radius: 6px;
   margin: 0 0 1em;
   width: 50%;
   padding: 1em 0;
-  color: ghostwhite;
-  font-size: 1rem;
-  cursor: pointer;
   grid-column: 3;
   justify-self: center;
   align-self: end;
@@ -118,10 +112,6 @@ div {
   grid-row: 3;
 }
 
-.btn:hover {
-  background: #0099CC;
-}
-
 a {
   color: ghostwhite;
   text-decoration: none;
@@ -129,32 +119,51 @@ a {
   height: 100%;
 }
 
-.btn a {
-  padding: 1em 2em;
-}
+/*********************
+Media Querries
+**********************/
 
 @media only screen and (max-width: 1090px) {
+  .main-gallery-list {
+    margin: 0 1rem;
+  }
   .btn a {
-    font-size: .8em;
+    font-size: 1rem;
     padding: 1em;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
+  .btn {
+    width: 70%;
+    font-size: 0.8rem;
+  }
   .btn a {
-    font-size: 1.3em;
     padding: 1em;
   }
   .card {
     width: 70vw;
     justify-self: center;
+    margin: 0.9rem auto 0;
   }
 }
 
 @media only screen and (max-width: 721px) {
-  .btn a {
-    font-size: .8em;
+  .btn {
+    width: 80%;
+    font-size: 0.4rem;
   }
+  .card {
+    width: 70vw;
+    justify-self: center;
+    margin: 0.9rem auto 0;
+  }
+  .img-thumbnail {
+    border: 1px solid ghostwhite;
+    border-radius: 3px;
+    padding: 0.5rem;
+  }
+
 }
 
 </style>
