@@ -1,5 +1,4 @@
 <template>
-
   <div class="gallery-page">
 
     <h1 id="gallery-title">Project Gallery</h1>
@@ -12,11 +11,9 @@
       <GridView v-if="isGrid" />
       <ListView v-if="isList" />
     </div>
+
   </div>
-
 </template>
-
-
 
 <script>
 import GridView from '@/views/Grid.vue'
@@ -35,7 +32,6 @@ export default {
     }
   },
   methods: {
-    // each method will add the required class to the main gallery div
     addListClass() {
       this.isList = true
       this.isGrid = false
@@ -49,12 +45,10 @@ export default {
 
 </script>
 
-
-
 <style>
 
 .gallery-page {
-  background-color: #676a70;
+  background-color: rgba(0, 0, 10, .7);
   margin: 0;
 }
 

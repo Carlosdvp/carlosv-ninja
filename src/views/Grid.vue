@@ -1,24 +1,24 @@
 <template>
-
   <div class="main-gallery">
     <div class="card" v-for="card in cards">
+
       <h4>{{ card.header }}</h4>
       <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
         <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
       </router-link>
+
       <div>
         <h5>{{ card.subtitle }}</h5>
         <p>{{ card.description }}</p>
       </div>
+
       <button class="btn">
         <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
       </button>
+
     </div>
   </div>
-
 </template>
-
-
 
 <script>
 
@@ -33,8 +33,6 @@ export default {
 
 </script>
 
-
-
 <style scoped>
 
 .main-gallery {
@@ -45,8 +43,8 @@ export default {
   margin: 0 auto;
   padding: 4rem 6rem;
   background:  linear-gradient(
-    rgba(50, 100, 100, .7),
-    rgba(50, 100, 100, .7)
+    rgba(0, 0, 10, .8),
+    rgba(0, 0, 0, .7)
   ),
   url('../assets/splatter.jpg');
   background-repeat: round;

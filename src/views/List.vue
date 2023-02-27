@@ -20,8 +20,6 @@
 
 </template>
 
-
-
 <script>
 
 export default {
@@ -34,14 +32,12 @@ export default {
 }
 </script>
 
-
-
 <style scoped>
 
 .main-gallery-list {
   background:  linear-gradient(
-    rgba(50, 100, 100, .7),
-    rgba(50, 100, 100, .7)
+    rgba(0, 0, 10, .9),
+    rgba(0, 0, 0, .8)
   ),
   url('../assets/splatter.jpg');
   background-repeat: no-repeat;
