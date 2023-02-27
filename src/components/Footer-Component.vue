@@ -1,7 +1,7 @@
 
 <template>
   <footer class="footer">
-    <p><small><a id="main-footer-link" class="links" href="https://www.carlosv.dev" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2022</small></p>
+    <p><small><a id="main-footer-link" class="links" href="https://www.carlosv.dev" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2023</small></p>
   </footer>
 </template>
 
@@ -38,8 +38,8 @@ footer p  {
 
 footer {
   background:  linear-gradient(
-    rgba(4, 8, 8, .6),
-    rgba(4, 8, 8, .9)
+    rgba(4, 8, 8, .7),
+    rgba(4, 8, 8, 1)
   ),
   url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;

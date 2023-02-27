@@ -3,11 +3,11 @@
 
   <div>
     <header class="jumbotron">
-      <h1>Carlos V</h1>
+      <h1 id="main-title">Carlos V</h1>
       <hr>
-      <h3 id="sub-title">Front End Dev &nbsp; | &nbsp; Software Developer</h3>
+      <h3 id="sub-title">Front End Developer &nbsp; | &nbsp; Software Engineer</h3>
       <div id="header-intro">
-        <p>This site was built using Vue 3 and CSS Grid.</p>
+        <p>Built using VueJS, Vuex and CSS Grid.</p>
       </div>
     </header>
   </div>
@@ -39,6 +39,10 @@ h1 {
   letter-spacing: 2px;
 }
 
+#main-title {
+  font-size: 6rem;
+}
+
 header hr {
   border-top: 1px solid lightsteelblue;
   width: 100%;
@@ -61,15 +65,15 @@ header hr {
 }
 
 .jumbotron {
-  padding: 6rem 0;
+  padding: 4.5rem 0;
   background:  linear-gradient(
-    rgba(50, 80, 200, .9),
-    rgba(30, 100, 140, .8)
+    rgba(0, 0, 10, .7),
+    rgba(0, 0, 0, .8)
   ),
   url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 77vh;
+  height: 80vh;
 }
 
 </style>
