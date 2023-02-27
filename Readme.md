@@ -27,47 +27,46 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
 
 -----------------------------------------------------------------------------
 
-# Improvement Roadmap - 2022
+# Improvement History - 2022
 
 
-1. Migrate from Vue 2 to Vue 3
-2. Implement Vuex 4 store for the data used in the Cards
-  - Move all repeated code out of the components
+1. Migrated from Vue 2 to Vue 3
+2. Implemented Vuex 4 store for the data used by the Cards
+  - Moved all repeated code out of the components
     - either to a parent component 
     - or to the store
-3. Add the ability to select between List and Grid view in the projects gallery
-4. Fix the Styling
+3. Added the ability to select between List and Grid view in the projects gallery
+4. Fixed the Styling
   - make the layout responsive
   - make less colorful, make the style sharper and more professional, similar to Uniswap Dex UI
   - and clean up the css
   - some styles may need to be global to eliminate too much repetition of the same stuff
-5. cull projects shown
+5. culled projects shown in the Project Gallery
   - only show complex and complete applications
-  - remove simple exercises, apps with no realworld biz use
-
+  - removed simple exercises, apps with no realworld application
 
 --------------------------------------------------------------------------
 
-### 1. Migrate from Vue 2 to Vue 3
+### 1. Migration from Vue 2 to Vue 3 - Details
 
-- ran the command `vue add vue-next`
+- Ran the command `vue add vue-next`
   - this seems to have updated all the necessary packages
-- deleted node_modules and then re-installed dependencies
-- now it renders. but the code for the router needs to be upgraded
-  - uninstall previous vue-router package, remove main.js references to the router
-  - install vue-router: `vue add router`
-  - manually edit the router/index.js files
-- moved all the routes to the router.index.js file
-- updated all component paths
+- Deleted node_modules and then re-installed dependencies
+- Now it renders, but the code for the router needs to be upgraded
+  - uninstalled previous vue-router package, remove main.js references to the router
+  - installed vue-router: `vue add router`
+  - manually edited the router/index.js files
+- Moved all the routes to the router.index.js file
+- Updated all component paths
 
 - unrelated: 
   - I edited some of the styles to make it look cleaner and more uniform in its color scheme
   - Also made some changes to the Homepage text
-  - fixed link in the footer to live site
+  - Fixed link in the footer to live site
 
-### 2. Add Vuex to project
+### 2. Added Vuex to project
 
-created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-implement-vuex-store
+Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-implement-vuex-store
 
 - installed the vuex package with npm: `npm install vuex@next`
 - created the store folder and the store/index.js file
@@ -107,7 +106,7 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
         - Finallly the *solution* was to simply pull the data for one project from the store inside the project view and pass that data down into the Card as a prop.
     4. This is fine.
 
-### 3. Add the ability to select between List and Grid view in the projects gallery
+### 3. Added the ability to select between List and Grid view in the projects gallery
 
   - create a pair of buttons
     - each should have a label 'LIST View' or 'GRID View'
@@ -117,18 +116,17 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
     - List View Component
   - Grid View is the default view I had in the Gallery component, move this to the Grid View component.
 
-
-### 4. Fix the Styling
+### 4. Fixed the Styling
 
 1. clean up the css
 2. some styles may need to be global to eliminate too much repetition of the same stuff
 3. make the layout responsive
 4. make less colorful, make the style sharper and more professional.
 
+### 5. Cleaned up projects listed
 
-### 5. cull projects shown
-  - only show complex and complete applications
-  - remove simple exercises, apps with no realworld biz use
+  - Should only show complex and complete applications
+  - Removed simple exercises, apps with no realworld biz use
 
   - Keep: 
     - Arquitetura
@@ -139,3 +137,17 @@ created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
     - Color changing Grid
 
 ********************************************************
+
+# Improvements / Fixes Required
+
+1. Added new Projects to the site
+  - Email sync application landing page
+  - Hardhat Boilerplate conversion from React FE to Vue FE
+  - Monster Battle Game
+
+2. Bug Fix - Noticed that the Navbar renders incorrectly on Chrome
+  - This nees to be fixed
+    -- it looks like the media querries might have an issue
+
+3. Upgrade the styling
+  - make it more elegant, I like how Uniswap and the GMX Earn page look; use that as inspiration
