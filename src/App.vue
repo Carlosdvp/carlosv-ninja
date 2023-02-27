@@ -27,7 +27,7 @@ export default {
 }
 
 body {
-  background-color: lightsteelblue;
+  background-color: rgba(100, 100, 100, .5);
   color: ghostwhite;
   margin: 0;
   padding: 0;

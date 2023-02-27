@@ -3,13 +3,11 @@
 
     <div class="about-me">
       <img id="my-pic" src="../../public/images/red-knight.png">
-      <p class="about-text">HI, I am Carlos V, started out my journey as a Web Designer, and found my way to the land of the Front End Web Dev. I really like JS and I love Vue.js, it is the best thing since cat videos took over the internets.</p>
-      <p>I also have a fascination for History, Art and AI; this last one I believe will change the world and the course of human history.</p>
+      <p class="about-text">I am a software engineer with experience in Vue, Node, JavaScript, and CSS Grid. I have a passion for creating intuitive and functional user experiences, and have a wide range of experience working with web technologies.</p>
+      <p>I have a track record of delivering robust and reliable applications, and strive to push the boundaries of what is possible with web development.</p>
     </div>
 
-  <!-- Start Contact Section -->
     <contactMe></contactMe>
-  <!-- End Contact Section -->
     
   </div>
 </template>

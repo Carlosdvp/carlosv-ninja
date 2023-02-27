@@ -1,5 +1,4 @@
 <template>
-
   <div class="card">
 
     <a :href="project.href" data-toggle="tooltip" title="" target="_blank">
@@ -28,9 +27,7 @@
     </div>
 
   </div>
-
 </template>
-
 
 <script>
 
@@ -41,26 +38,26 @@ export default {
 
 </script>
 
-
 <style scoped>
-
 
 .card {
   display: grid;
   width: 72vw;
+  height:72vh;
   grid-template-columns: 45% 54%;
   align-items: center;
   justify-content: center;
   border: 2px solid ghostwhite;
   border-radius: 15px;
-  padding: .5em;
+  padding: 5rem .5em;
   margin: 3em auto;
+  background-color: rgba(200, 200, 200, .4);
 }
 
 .gallery-image {
-  background: rgba(12, 77, 105, .2);
-  width: 54%;
-  height: 72vh;
+  background: rgba(12, 77, 105, .4);
+  width: 63%;
+  height: 50vh;
   object-fit: cover;
   margin: 1em 0;
 }
@@ -114,8 +111,6 @@ ul, #list-title {
   padding: 0 3.6em;
   text-align: left;
 }
-
-
 
 /**************************************
   Media Queries
