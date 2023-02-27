@@ -7,7 +7,7 @@ import Gallery from '@/views/Gallery.vue'
 import ProjectOne from '@/views/Project-1.vue'
 import ProjectTwo from '@/views/Project-2.vue'
 import ProjectThree from '@/views/Project-3.vue'
-
+import ProjectFour from '@/views/Project-4.vue'
 
 const routes = [
     {
@@ -34,6 +34,11 @@ const routes = [
       path: '/portfolio/project-3',
       name: 'project-3',
       component: ProjectThree
+    },
+    {
+      path: '/portfolio/project-4',
+      name: 'project-4',
+      component: ProjectFour
     },
     {
       path: '/about',

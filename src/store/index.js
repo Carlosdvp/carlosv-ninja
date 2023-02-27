@@ -41,6 +41,19 @@ const store = createStore({
         btnTitle: "Pricefeed",
         btnText: "Visit the Project",
         id: 3
+      },
+      {
+        header: "Email sync landing page prototype",
+        href: "/portfolio/project-4",
+        title: "Landing Page",
+        image: require("../../public/images/landing_page.png"),
+        imageAlt: "Gmail Card",
+        subtitle: "Vue App with Vuex",
+        description: "Simple Email migration tool prototype.",
+        btnLink: "https://sparkly-dusk-69a7da.netlify.app/",
+        btnTitle: "Web App",
+        btnText: "Visit the Project",
+        id: 4
       }
     ],
     projects: [
@@ -86,6 +99,19 @@ const store = createStore({
         techStack: ["HTML", "CSS3", "JavaScript", "VueJS", "NodeJS", "Axios"],
         btnLink: "https://carlosdvp.github.io/btc-eth-Pricefeed/",
         btnTitle: "BTC-ETH Pricefeed"
+      },
+      {
+        id: 4,
+        href: "https://sparkly-dusk-69a7da.netlify.app/",
+        linkTitle: "Netlify App",
+        image: require("../../public/images/landing_page.png"),
+        imageAlt: "project image",
+        title: "Email Migration Landing Page",
+        subtitleTwo: "Prototype of the application",
+        descriptionOne: "This application is a prtotype to present a proof of work. The lefthand card showcases all of the functionality, while the righthand card is a placeholder. I used a Vuex store to handle the state for the button and the dropdown menus. App has been deployed to Netlify.",
+        techStack: ["HTML", "JavaScript", "Vue 3", "Vuex 4", "CSS3", "CSS Grid"],
+        btnLink: "https://sparkly-dusk-69a7da.netlify.app/",
+        btnTitle: "Netlify App"
       }
       // Saving an emptytemplate for tuture projects
       //

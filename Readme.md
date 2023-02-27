@@ -17,18 +17,14 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
 ## Linked to the github repo for the site
 
 - set it up for cotinuous deployment
-- should make it easier to re-upload the site anytime I add or change something; this way I won't have to upload the entire build folder.
+- added a staging branch to test before merging changes to Prod
 
 - I still need TODO the following:
-  - set up a test branch, so I don't break my website by changing stuff on prod
   - get it to redirect carlosv.dev to www.carlosv.dev; right now I have to type in the www using the root name directly goes nowhere.
-  - might also need a subdomain for testing, something like development.carlosv.dev
-
 
 -----------------------------------------------------------------------------
 
 # Improvement History - 2022
-
 
 1. Migrated from Vue 2 to Vue 3
 2. Implemented Vuex 4 store for the data used by the Cards
@@ -138,7 +134,7 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 
 ********************************************************
 
-# Improvements / Fixes Required
+# Improvements / Fixes Required - 2023
 
 1. Added new Projects to the site
   - Email sync application landing page
