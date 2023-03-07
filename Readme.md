@@ -8,6 +8,15 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
 - to run the dev server
 - npm run serve
 
+-----------------------------------------------------------------------------
+
+# To Add New Projects
+
+1. Update the following:
+  - add a project component to /views
+  - add entries to /store/index.js
+    - in Cards[] and projects[]
+  - 
 
 -----------------------------------------------------------------------------
 
