@@ -1,18 +1,20 @@
 <template>
-  <Card :project="project" />
+
+  <Card :project="project template" />
+
 </template>
 
 <script>
 import Card from '@/components/Card.vue'
 
 export default {
-  name: "Project-3",
+  name: "Project-template",
   components: {
     Card
   },
   data() {
     return {
-      project: this.$store.state.projects[2]
+      project: this.$store.state.projects[3]
     }
   }
 }
