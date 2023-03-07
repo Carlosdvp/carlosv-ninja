@@ -50,7 +50,7 @@ const store = createStore({
         imageAlt: "Some bird",
         subtitle: "Vue 3 Project",
         description: "Bird app clone created with Vue 3",
-        btnLink: "https://birdapp-clone.herokuapp.com/",
+        btnLink: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
         btnTitle: "Bird app clone",
         btnText: "Visit the Project",
         id: 4
@@ -113,7 +113,7 @@ const store = createStore({
       },
       {
         id: 4,
-        href: "https://birdapp-clone.herokuapp.com/",
+        href: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
         linkTitle: "Bird app clone",
         image: require("../../public/images/bird.jpg"),
         imageAlt: "project image",
@@ -121,7 +121,7 @@ const store = createStore({
         subtitleTwo: "Bird clone",
         descriptionOne: "This is a simple clone of the blue bird app, built using Vue 3, along with Vue router and Vuex for state management. Deployed to Heroku",
         techStack: ["HTML", "CSS3", "JavaScript", "Vue 3", "Vue router", "Vuex"],
-        btnLink: "https://birdapp-clone.herokuapp.com/",
+        btnLink: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
         btnTitle: "Vue 3 App project"
       },
       {

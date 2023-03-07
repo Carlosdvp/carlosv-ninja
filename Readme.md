@@ -144,6 +144,13 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 
 ********************************************************
 
+# 2023 Improvements
+
+1. Added 2 new projects
+2. Moved Bird app clone from Heroku to AWS. Heroku stopped their free hosting plan, and I already have a biiled account with AWS.
+
+********************************************************
+
 # Improvements / Fixes Required - 2023
 
 1. Added new Projects to the site
