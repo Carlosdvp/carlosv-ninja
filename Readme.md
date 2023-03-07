@@ -13,10 +13,11 @@ Which will also serve to reduce the dependence on old tech like jQuery and incre
 # To Add New Projects
 
 1. Update the following:
-  - add a project component to /views
+  - add a project component in /views
   - add entries to /store/index.js
     - in Cards[] and projects[]
-  - 
+  - add an image for the project in ./public
+  - add an entry to the /router
 
 -----------------------------------------------------------------------------
 
@@ -146,9 +147,7 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 # Improvements / Fixes Required - 2023
 
 1. Added new Projects to the site
-  - Email sync application landing page
   - Hardhat Boilerplate conversion from React FE to Vue FE
-  - Monster Battle Game
 
 2. Bug Fix - Noticed that the Navbar renders incorrectly on Chrome
   - This nees to be fixed
@@ -156,3 +155,10 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 
 3. Upgrade the styling
   - make it more elegant, I like how Uniswap and the GMX Earn page look; use that as inspiration
+
+4. UI improvement
+  - make the grid vs list view selection persistent
+  - when a user goes into a project's details page and goes back to the Portfolio page the view should be what had been previosuly selected by the user.
+  - if it was in Grid view it should remain until List is selected
+  - and vice versa
+  - right now it goes back to Grid view whenever a user navigates away from that page

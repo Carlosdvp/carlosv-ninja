@@ -1,7 +1,5 @@
 <template>
-
   <Card :project="project" />
-
 </template>
 
 <script>
