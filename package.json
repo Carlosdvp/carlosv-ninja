@@ -1,6 +1,6 @@
 {
-  "name": "my-Website-Vue",
-  "version": "1.0.0",
+  "name": "portolio_site",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
@@ -17,8 +17,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.4",
     "@vue/compiler-sfc": "^3.2.33",
-    "vue-cli-plugin-store": "~0.0.7",
-    "vue-cli-plugin-vue-next": "~0.1.4"
+    "vue-cli-plugin-store": "~0.0.7"
   },
   "postcss": {
     "plugins": {
