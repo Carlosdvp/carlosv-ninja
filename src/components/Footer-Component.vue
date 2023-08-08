@@ -1,7 +1,14 @@
 
 <template>
   <footer class="footer">
-    <p><small><a id="main-footer-link" class="links" href="https://www.carlosv.dev" target="_blank">{{ msg }}</a>&nbsp; &copy; &nbsp;2023</small></p>
+    <p>
+      <small>
+        <a id="main-footer-link" class="links" href="https://www.carlosv.dev" target="_blank">
+          {{ msg }}
+        </a>
+        &nbsp; &copy; &nbsp;2023
+      </small>
+    </p>
   </footer>
 </template>
 

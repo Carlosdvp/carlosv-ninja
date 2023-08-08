@@ -3,8 +3,12 @@
 
     <h1 id="gallery-title">Project Gallery</h1>
     <div>
-      <button class="btn" ref="grid" @click="addGridClass()">Grid View</button>
-      <button class="btn" ref="list" @click="addListClass()">List View</button>
+      <button class="btn" ref="grid" @click="addGridClass()">
+        Grid View
+      </button>
+      <button class="btn" ref="list" @click="addListClass()">
+        List View
+      </button>
     </div>
 
     <div :class="[ isList ? 'list-view' : 'grid-view' ]">

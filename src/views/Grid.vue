@@ -2,7 +2,9 @@
   <div class="main-gallery">
     <div class="card" v-for="card in cards">
 
-      <h4>{{ card.header }}</h4>
+      <h4>
+        {{ card.header }}
+      </h4>
       <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
         <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
       </router-link>
@@ -13,7 +15,9 @@
       </div>
 
       <button class="btn">
-        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
+        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">
+          {{ card.btnText }}
+        </a>
       </button>
 
     </div>

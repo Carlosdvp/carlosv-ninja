@@ -5,9 +5,9 @@
     <header class="jumbotron">
       <h1 id="main-title">Carlos V</h1>
       <hr>
-      <h3 id="sub-title">Front End Developer &nbsp; | &nbsp; Software Engineer</h3>
+      <h3 id="sub-title">Full Stack Developer &nbsp; | &nbsp; Software Engineer</h3>
       <div id="header-intro">
-        <p>Built using VueJS, Vuex and CSS Grid.</p>
+        <p>Built using Vue, Pinia and Tailwind</p>
       </div>
     </header>
   </div>

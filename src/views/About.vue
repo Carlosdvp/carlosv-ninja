@@ -7,7 +7,7 @@
       <p>I have a track record of delivering robust and reliable applications, and strive to push the boundaries of what is possible with web development.</p>
     </div>
 
-    <contactMe></contactMe>
+    <contactMe />
     
   </div>
 </template>

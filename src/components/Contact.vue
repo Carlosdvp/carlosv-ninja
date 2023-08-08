@@ -1,13 +1,11 @@
 
 <template>
-<!-- Contact Info Section -->
   <div id="contact-info-main" class="contact-info">
 
     <div class="contact-title">
       <h3> &mdash; Contact &mdash;</h3>
     </div>
 
-  <!-- Social Icons - SVG -->
     <div id="social-icons" class="social-section">
       <a href="mailto:carlosdvp@yahoo.com?subject=Información%20sobre%20servicios" target="_blank">
         <svg class="icon-mail"><use xlink:href="#icon-mail"></use>
@@ -37,7 +35,6 @@
       <p>cats</p>
     </div>
   </div>
-<!-- End of the Contact info section -->
 </template>
 
 <script>
