@@ -1,22 +1,11 @@
 <template>
-
   <Card :project="project template" />
-
 </template>
 
-<script>
+<script setup>
 import Card from '@/components/Card.vue'
+import { useProjectsStore } from '../store/ProjectsStore';
 
-export default {
-  name: "Project-template",
-  components: {
-    Card
-  },
-  data() {
-    return {
-      project: this.$store.state.projects[3]
-    }
-  }
-}
-
+const projectsStore = useProjectsStore();
+const project = projectsStore.projects[5];
 </script>

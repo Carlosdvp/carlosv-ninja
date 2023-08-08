@@ -20,16 +20,11 @@
 
 </template>
 
-<script>
+<script setup>
+import { useProjectsStore } from '../store/ProjectsStore';
 
-export default {
-  name: 'ListView',
-  data() {
-    return {
-      cards: this.$store.state.cards
-    }
-  }
-}
+const projectsStore = useProjectsStore();
+const cards = projectsStore.cards;
 </script>
 
 <style scoped>
