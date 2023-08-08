@@ -19,34 +19,23 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import GridView from '@/views/Grid.vue'
 import ListView from '@/views/List.vue'
+import { ref } from 'vue'
 
-export default {
-  name: 'Gallery',
-  components: {
-    GridView,
-    ListView
-  },
-  data() {
-    return {
-      isList: false,
-      isGrid: true
-    }
-  },
-  methods: {
-    addListClass() {
-      this.isList = true
-      this.isGrid = false
-    },
-    addGridClass() {
-      this.isList = false
-      this.isGrid = true
-    }
-  }
+const isList = ref(false)
+const isGrid = ref(true)
+
+function addListClass() {
+  isList.value = true
+  isGrid.value = false
 }
 
+function addGridClass() {
+  isList.value = false
+  isGrid.value = true
+}
 </script>
 
 <style>

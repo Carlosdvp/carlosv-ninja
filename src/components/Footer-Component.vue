@@ -12,13 +12,10 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'FooterComponent',
-  props: {
-    msg: String
-  }
-}
+<script setup>
+const props = defineProps({
+  msg: String
+});
 </script>
 
 <style scoped>

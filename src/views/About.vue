@@ -3,7 +3,7 @@
 
     <div class="about-me">
       <img id="my-pic" src="../../public/images/red-knight.png">
-      <p class="about-text">I am a software engineer with experience in Vue, Node, JavaScript, and CSS Grid. I have a passion for creating intuitive and functional user experiences, and have a wide range of experience working with web technologies.</p>
+      <p class="about-text">I am a software engineer with experience in Vue, React, Node, JavaScript, Typescript, MySql, MongoDB, HTML and CSS. I have a passion for creating intuitive and functional user experiences, and have a wide range of experience working with web technologies.</p>
       <p>I have a track record of delivering robust and reliable applications, and strive to push the boundaries of what is possible with web development.</p>
     </div>
 
@@ -12,17 +12,8 @@
   </div>
 </template>
 
-<script>
-
+<script setup>
 import contactMe from '@/components/Contact.vue'
-
-export default {
-  name: 'About',
-  components: {
-    contactMe
-  }
-} 
-
 </script>
 
 <style scoped>

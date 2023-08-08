@@ -7,19 +7,14 @@
       <hr>
       <h3 id="sub-title">Full Stack Developer &nbsp; | &nbsp; Software Engineer</h3>
       <div id="header-intro">
-        <p>Built using Vue, Pinia and Tailwind</p>
+        <p>Site built with Vue, Vue router, Pinia and Tailwind</p>
       </div>
     </header>
   </div>
 
 </template>
 
-<script>
-
-export default {
-  name: 'Jumbotron'
-}
-
+<script setup>
 </script>
 
 
