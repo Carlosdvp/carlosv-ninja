@@ -1,14 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
-import App from '@/App.vue'
 import Jumbotron from '@/views/Jumbotron.vue'
 import About from '@/views/About.vue'
 import Gallery from '@/views/Gallery.vue'
-import ProjectOne from '@/views/Project-1.vue'
-import ProjectTwo from '@/views/Project-2.vue'
-import ProjectThree from '@/views/Project-3.vue'
-import ProjectFour from '@/views/Project-4.vue'
-import ProjectFive from '@/views/Project-5.vue'
+import ProjectOne from '@/components/Project-1.vue'
+import ProjectTwo from '@/components/Project-2.vue'
+import ProjectThree from '@/components/Project-3.vue'
+import ProjectFour from '@/components/Project-4.vue'
+import ProjectFive from '@/components/Project-5.vue'
 
 const routes = [
     {
