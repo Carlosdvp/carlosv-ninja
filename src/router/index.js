@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Jumbotron from '@/views/Jumbotron.vue'
+import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import Gallery from '@/views/Gallery.vue'
 import ProjectOne from '@/components/Project-1.vue'
@@ -12,7 +12,7 @@ const routes = [
     {
       path: '/',
       name: 'home',
-      component: Jumbotron
+      component: Home
     },
     {
       path: '/portfolio',

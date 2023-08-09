@@ -1,24 +1,3 @@
-<template>
-  <div class="gallery-page">
-
-    <h1 id="gallery-title">Project Gallery</h1>
-    <div>
-      <button class="btn" ref="grid" @click="addGridClass()">
-        Grid View
-      </button>
-      <button class="btn" ref="list" @click="addListClass()">
-        List View
-      </button>
-    </div>
-
-    <div :class="[ isList ? 'list-view' : 'grid-view' ]">
-      <GridView v-if="isGrid" />
-      <ListView v-if="isList" />
-    </div>
-
-  </div>
-</template>
-
 <script setup>
 import GridView from '@/views/Grid.vue'
 import ListView from '@/views/List.vue'
@@ -38,13 +17,32 @@ function addGridClass() {
 }
 </script>
 
+<template>
+  <div class="bg-black bg-opacity-80 m-0 text-center">
+    <h1 id="gallery-title">Project Gallery</h1>
+    <div>
+      <button
+        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 w-[10%] py-2 text-white text-lg cursor-pointer"
+        ref="grid"
+        @click="addGridClass()">
+        Grid View
+      </button>
+      <button
+        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 w-[10%] py-2 text-white text-lg cursor-pointer"
+        ref="list"
+        @click="addListClass()">
+        List View
+      </button>
+    </div>
+
+    <div :class="[ isList ? 'list-view' : 'grid-view' ]">
+      <GridView v-if="isGrid" />
+      <ListView v-if="isList" />
+    </div>
+  </div>
+</template>
+
 <style>
-
-.gallery-page {
-  background-color: rgba(0, 0, 10, .7);
-  margin: 0;
-}
-
 #gallery-title {
   color: ghostwhite;
   text-shadow: darkred 1px 1px;
@@ -54,23 +52,6 @@ function addGridClass() {
   padding: 0.3em 0;
   letter-spacing: .15em;
   border-bottom: 1px solid whitesmoke;
-}
-
-.btn {
-  justify-self: center;
-  background: transparent;
-  border: 2px solid #0099CC;
-  border-radius: 6px;
-  margin: 1.5rem 0.3rem 1rem;
-  width: 10%;
-  padding: 0.5rem 0;
-  color: ghostwhite;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #0099CC;
 }
 
 /*********************
@@ -90,5 +71,4 @@ Media Querries
     font-size: .8em;
   }
 }
-
 </style>

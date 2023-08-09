@@ -1,6 +1,6 @@
 
 <template>
-  <div id="contact-info-main" class="contact-info">
+  <div id="contact-info-main" class="flex mt-auto contact-info">
 
     <div class="contact-title">
       <h3> &mdash; Contact &mdash;</h3>

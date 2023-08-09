@@ -1,36 +1,16 @@
 <template>
-  <Navigation />
-  <router-view />
-  <FooterComponent msg="Carlos V" />
+  <div class="text-center flex flex-col h-full">
+    <Navigation />
+    <router-view />
+    <Footer msg="Carlos V" />
+  </div>
 </template>
 
-<script>
-import Navigation from './components/Navigation.vue'
-import FooterComponent from './components/Footer-Component.vue'
-
-export default {
-  name: 'app',
-  components: {
-    Navigation,
-    FooterComponent
-  }
-} 
+<script setup>
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin: 0;
-  height: 100vh;
-}
-
-body {
-  background-color: rgba(100, 100, 100, .5);
-  color: ghostwhite;
-  margin: 0;
-  padding: 0;
-}
-
+@import 'main.css';
 </style>

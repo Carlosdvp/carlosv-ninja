@@ -1,7 +1,6 @@
 
 <template>
-  <nav class="container">
-
+  <nav class="container min-w-full">
   	<a class="navbar-brand" href="/">
   		<img id="logo-navbrand" src="../assets/logo.png" alt="logo">
   		<p class="logo-text">Carlos V</p> 
@@ -13,39 +12,30 @@
     </label>
 
   	<div class="navbar">
-
   		<ul class="navbar-nav">
   			<li class="nav-item-1">
-  				<router-link to="/" class="nav-link">Home</router-link>
+  				<router-link to="/" class="nav-link">
+            Home
+          </router-link>
   			</li>
   			<li class="nav-item-2">
-  				<router-link to="/portfolio" class="nav-link">Portfolio</router-link>
+  				<router-link to="/portfolio" class="nav-link">
+            Portfolio
+          </router-link>
   			</li>
   			<li class="nav-item-3">
-  				<router-link to="/about" class="nav-link">About</router-link>>
+  				<router-link to="/about" class="nav-link">
+            About
+          </router-link>
   			</li>
   		</ul>
-
   	</div>
-
   </nav>
 </template>
 
-
-
-<script setup>
-</script>
-
-
 <style scoped>
 
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-}
-
 nav {
-	width: 100%;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   display: grid;
   grid-template-columns: 30% 1fr 20% 1fr 20% 1fr 30% 1fr;
@@ -59,7 +49,6 @@ nav {
   url('../assets/pink-texture.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* for the burger menu */
