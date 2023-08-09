@@ -1,23 +1,42 @@
 <template>
-
-  <div class="main-gallery-list">
-    <div class="card" v-for="card in cards">
-      <h4 class="card-header">{{ card.header }}</h4>
-      <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-      <div class="card-info">
-        <h5>{{ card.subtitle }}</h5>
-        <p>{{ card.description }}</p>
+  <div class="main-gallery-list md:w-[70%] sm:w-[90%] max-w-[1080px] mx-auto my-0">
+    <div
+      class="card h-[18vh] grid grid-cols-[1fr,1fr,1fr] grid-rows-[25%,25%,25%,25%] items-center justify-center border border-white my-2"
+      v-for="card in cards">
+      <h4
+        class="card-header hidden sm:block">
+        {{ card.header }}
+      </h4>
+      <img
+        class="gallery-image border border-white rounded-sm justify-self-center w-[70%] h-[80%]"
+        :src="card.image"
+        :alt="card.imageAlt">
+      <div class="card-info hidden md:block">
+        <h5>
+          {{ card.subtitle }}
+        </h5>
+        <p>
+          {{ card.description }}
+        </p>
       </div>
-
-      <button class="btn btn-one">
-        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">{{ card.btnText }}</a>
+      <button class="btn-one md:w-[60%] sm:w-[80%] py-2 justify-self-center border-2 border-white hover:bg-slate-500">
+        <a
+          class="text-white no-underline w-[100%] h-[100%]"
+          :href="card.btnLink"
+          :title="card.btnTitle"
+          target="_blank">
+          {{ card.btnText }}
+        </a>
       </button>
-      <button class="btn btn-two">
-        <a :href="card.href">Project Details</a>
+      <button class="btn-two md:w-[60%] sm:w-[80%] py-2 justify-self-center border-2 border-white hover:bg-slate-500">
+        <a
+          class="text-white no-underline w-[100%] h-[100%]"
+          :href="card.href">
+          Project Details
+        </a>
       </button>
     </div>
   </div>
-
 </template>
 
 <script setup>
@@ -28,7 +47,6 @@ const cards = projectsStore.cards;
 </script>
 
 <style scoped>
-
 .main-gallery-list {
   background:  linear-gradient(
     rgba(0, 0, 10, .9),
@@ -38,28 +56,9 @@ const cards = projectsStore.cards;
   background-repeat: no-repeat;
   background-size: cover;
   color: ghostwhite;
-  margin: 0 1rem;
-}
-
-/* CARD DIVs - CSS Grid */
-
-.card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: .5em;
-  height: 40vh;
 }
 
 .gallery-image {
-  background: rgba(12, 77, 105, .2);
-  justify-self: center;
-  width: 80%;
-  height: 30vh;
   object-fit: cover;
   grid-column: 1/2;
   grid-row: 1/5;
@@ -69,92 +68,35 @@ const cards = projectsStore.cards;
   grid-column: 2/3;
   grid-row: 2/3;
   align-self: start;
-  margin-top: 0;
 }
 .card-info {
   grid-column: 2/3;
   grid-row: 3/4;
   align-self: start;
-  margin: 0;
 }
 
-div {
-  margin-top: 2em;
-}
- 
-.img-thumbnail {
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: 1em;
-}
-
-.btn {
-  margin: 0 0 1em;
-  width: 50%;
-  padding: 1em 0;
-  grid-column: 3;
-  justify-self: center;
-  align-self: end;
-}
 .btn-one {
   grid-row: 2;
+  grid-column: 3;
 }
 .btn-two {
   grid-row: 3;
-}
-
-a {
-  color: ghostwhite;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
+  grid-column: 3;
 }
 
 /*********************
 Media Querries
 **********************/
-
-@media only screen and (max-width: 1090px) {
-  .main-gallery-list {
-    margin: 0 1rem;
+  @media only screen and (max-width: 640px) {
+  button {
+    width: 90%;
+    margin-right: 10px;
   }
-  .btn a {
-    font-size: 1rem;
-    padding: 1em;
+  .btn-one {
+    grid-column: 2/4;
   }
-}
-
-@media only screen and (max-width: 820px) {
-  .btn {
-    width: 70%;
-    font-size: 0.8rem;
-  }
-  .btn a {
-    padding: 1em;
-  }
-  .card {
-    width: 70vw;
-    justify-self: center;
-    margin: 0.9rem auto 0;
+  .btn-two {
+    grid-column: 2/4;
   }
 }
-
-@media only screen and (max-width: 721px) {
-  .btn {
-    width: 80%;
-    font-size: 0.4rem;
-  }
-  .card {
-    width: 70vw;
-    justify-self: center;
-    margin: 0.9rem auto 0;
-  }
-  .img-thumbnail {
-    border: 1px solid ghostwhite;
-    border-radius: 3px;
-    padding: 0.5rem;
-  }
-
-}
-
 </style>
