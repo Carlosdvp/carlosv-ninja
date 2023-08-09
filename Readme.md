@@ -169,3 +169,6 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - if it was in Grid view it should remain until List is selected
   - and vice versa
   - right now it goes back to Grid view whenever a user navigates away from that page
+
+
+  ***********************************************************************************

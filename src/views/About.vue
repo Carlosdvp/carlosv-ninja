@@ -4,8 +4,8 @@ import Contact from '@/components/Contact.vue'
 
 <template>
   <div
-    class="h-full text-[#2c3e50] m-0 bg-[slategray]">
-    <div class="">
+    class="flex flex-col h-full text-[#2c3e50] m-0 bg-[slategray]">
+    <div>
       <img
         class="h-[20vh] mx-auto my-0 p-10"
         src="../../public/images/red-knight.png">
