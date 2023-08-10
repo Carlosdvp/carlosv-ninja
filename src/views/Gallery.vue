@@ -18,17 +18,17 @@ function addGridClass() {
 </script>
 
 <template>
-  <div class="bg-black bg-opacity-80 m-0 text-center">
+  <div class="bg-black bg-opacity-80 m-0 text-center h-full">
     <h1 id="gallery-title">Project Gallery</h1>
     <div>
       <button
-        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 w-[10%] py-2 text-white text-lg cursor-pointer"
+        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 md:w-[10%] py-2 text-white text-lg cursor-pointer"
         ref="grid"
         @click="addGridClass()">
         Grid View
       </button>
       <button
-        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 w-[10%] py-2 text-white text-lg cursor-pointer"
+        class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 md:w-[10%] py-2 text-white text-lg cursor-pointer"
         ref="list"
         @click="addListClass()">
         List View
@@ -62,13 +62,14 @@ Media Querries
   .btn {
     font-size: 1rem;
     padding: 0.5rem;
-    width: 15%;
+    width: 30%;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .btn {
     font-size: .8em;
+    width: 40%;
   }
 }
 </style>

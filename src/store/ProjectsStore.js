@@ -10,7 +10,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         image: require("../../public/images/landing_page.png"),
         imageAlt: "Gmail Card",
         subtitle: "Vue App with Vuex",
-        description: "Simple Email migration tool prototype.",
+        description: "Email migration tool prototype.",
         btnLink: "https://sparkly-dusk-69a7da.netlify.app/",
         btnTitle: "Web App",
         btnText: "Visit the Project",
@@ -55,19 +55,19 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnText: "Visit the Project",
         id: 4
       },
-      {
-        header: "Arquitectura Apocaliptica Srl",
-        href: "/portfolio/project-5",
-        title: "Arquitectura Apocaliptica - Top Section",
-        image: require("../../public/images/Apocaliptica-1.jpg"),
-        imageAlt: "project image",
-        subtitle: "Centro de Diseno y Construccion",
-        description: "Website for an Architecture company.",
-        btnLink: "https://carlosdvp.github.io/Apocaliptica/",
-        btnTitle: "Arquitectura Apocaliptica",
-        btnText: "Visit the Website",
-        id: 5
-      },
+      // {
+        // header: "Arquitectura Apocaliptica Srl",
+        // href: "/portfolio/project-5",
+        // title: "Arquitectura Apocaliptica - Top Section",
+        // image: require("../../public/images/Apocaliptica-1.jpg"),
+        // imageAlt: "project image",
+        // subtitle: "Centro de Diseno y Construccion",
+        // description: "Website for an Architecture company.",
+        // btnLink: "https://carlosdvp.github.io/Apocaliptica/",
+        // btnTitle: "Arquitectura Apocaliptica",
+        // btnText: "Visit the Website",
+        // id: 5
+      // },
     ],
     projects: [
       {
@@ -124,21 +124,21 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnLink: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
         btnTitle: "Vue 3 App project"
       },
-      {
-        id: 5,
-        href: "https://carlosdvp.github.io/Apocaliptica/",
-        linkTitle: "Arquitectura Apocaliptica - Top Section",
-        image: require("../../public/images/Apocaliptica-1.jpg"),
-        imageAlt: "project image",
-        title: "Arquitectura Apocaliptica Srl",
-        subtitle: "Centro de Diseno y Construccion",
-        subtitleTwo: "Santa Cruz de la Sierra, Bolivia",
-        descriptionOne: "Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.",
-        descriptionTwo: "Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.",
-        techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
-        btnLink: "https://carlosdvp.github.io/Apocaliptica/",
-        btnTitle: "Arquitectura Apocaliptica"
-      },
+      // {
+        // id: 5,
+        // href: "https://carlosdvp.github.io/Apocaliptica/",
+        // linkTitle: "Arquitectura Apocaliptica - Top Section",
+        // image: require("../../public/images/Apocaliptica-1.jpg"),
+        // imageAlt: "project image",
+        // title: "Arquitectura Apocaliptica Srl",
+        // subtitle: "Centro de Diseno y Construccion",
+        // subtitleTwo: "Santa Cruz de la Sierra, Bolivia",
+        // descriptionOne: "Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.",
+        // descriptionTwo: "Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.",
+        // techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
+        // btnLink: "https://carlosdvp.github.io/Apocaliptica/",
+        // btnTitle: "Arquitectura Apocaliptica"
+      // },
       // Saving an emptytemplate for tuture projects
       //
       // {

@@ -1,21 +1,44 @@
-<template>
-  <div class="main-gallery">
-    <div class="card" v-for="card in cards">
+<script setup>
+import { useProjectsStore } from '../store/ProjectsStore';
 
-      <h4>
+const projectsStore = useProjectsStore();
+const cards = projectsStore.cards;
+</script>
+
+<template>
+  <div class="main-gallery grid h-full">
+    <div
+      class="grid p-4 grid-cols-[100%] border-2 border-gray-200 md:w-[30vw]"
+      v-for="card in cards">
+
+      <h4 class="text-xl py-2 text-slate-300 bg-slate-800 mb-2">
         {{ card.header }}
       </h4>
-      <router-link :to="card.href" data-toggle="tooltip" :title="card.title">
-        <img class="gallery-image img-thumbnail" :src="card.image" :alt="card.imageAlt">
-      </router-link>
+      <div class="h-[20vh]">
+        <router-link
+          class="h-[100%]"
+          :to="card.href"
+          data-toggle="tooltip"
+          :title="card.title">
+          <img
+            class="mx-auto my-0 object-cover h-full"
+            :src="card.image"
+            :alt="card.imageAlt">
+        </router-link>
+      </div>
 
-      <div>
-        <h5>{{ card.subtitle }}</h5>
+
+      <div class="py-3 text-slate-200">
+        <h4>{{ card.subtitle }}</h4>
         <p>{{ card.description }}</p>
       </div>
 
-      <button class="btn">
-        <a :href="card.btnLink" :title="card.btnTitle" target="_blank">
+      <button class="w-[50%] p-2 border border-white rounded-sm justify-self-center hover:bg-[#0099CC]">
+        <a
+          class="text-lg text-slate-300"
+          :href="card.btnLink"
+          :title="card.btnTitle"
+          target="_blank">
           {{ card.btnText }}
         </a>
       </button>
@@ -24,22 +47,12 @@
   </div>
 </template>
 
-<script setup>
-import { useProjectsStore } from '../store/ProjectsStore';
-
-const projectsStore = useProjectsStore();
-const cards = projectsStore.cards;
-</script>
-
 <style scoped>
-
 .main-gallery {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 1.5em;
-  margin: 0 auto;
-  padding: 4rem 6rem;
+  padding: 2rem;
   background:  linear-gradient(
     rgba(0, 0, 10, .8),
     rgba(0, 0, 0, .7)
@@ -50,84 +63,17 @@ const cards = projectsStore.cards;
   color: ghostwhite;
 }
 
-.card {
-  display: grid;
-  grid-template-columns: 100%;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: .5em;
-}
-
-.gallery-image {
-  background: rgba(12, 77, 105, .2);
-  width: 80%;
-  height: 50vh;
-  object-fit: cover;
-}
-
-div {
-  margin-bottom: 2em;
-  margin-top: 2em;
-}
- 
-.img-thumbnail {
-  border: 2px solid ghostwhite;
-  border-radius: 15px;
-  padding: 1em;
-}
-
-.btn {
-  margin: 0 0 1em;
-  width: 60%;
-  padding: 1em 0;
-}
-
-a {
-  color: ghostwhite;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-
-/*********************
-Media Querries
-**********************/
-
 @media only screen and (max-width: 1080px) {
   .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(150px, auto);
   }
 }
 
 @media only screen and (max-width: 720px) {
-  .card {
-    width: 70vw;
-    justify-self: center;
-  }
   .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(150px, auto);
   }
 }
-
-@media only screen and (max-width:500px) {
-  .card {
-    width: 70vw;
-    justify-self: center;
-    margin: 0 auto;
-    padding: 0.5rem 0;
-  }
-  .main-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(150px, auto);
-    padding: 0;
-  }
-}
-
 </style>
