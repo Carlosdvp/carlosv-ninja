@@ -4,8 +4,21 @@ export const useProjectsStore = defineStore('ProjectsStore', {
   state: () => ({
     cards: [
       {
-        header: "Email sync landing page prototype",
+        header: "HR Management App",
         href: "/portfolio/project-1",
+        title: "Full stack project",
+        image: require("../../public/images/Hr_management_app.png"),
+        imageAlt: "Gif thumbanil of the video",
+        subtitle: "Vue Full stack Project",
+        description: "Application made with Vue, Pinia, Node, Typescript and MySql",
+        btnLink: "https://github.com/Carlosdvp/hr-management-app",
+        btnTitle: "HR App",
+        btnText: "Visit Github Repo",
+        id: 1
+      },
+      {
+        header: "Email sync landing page prototype",
+        href: "/portfolio/project-2",
         title: "Landing Page",
         image: require("../../public/images/landing_page.png"),
         imageAlt: "Gmail Card",
@@ -14,11 +27,11 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnLink: "https://sparkly-dusk-69a7da.netlify.app/",
         btnTitle: "Web App",
         btnText: "Visit the Project",
-        id: 1
+        id: 2
       },
       {
         header: "DBZ Fights Game App",
-        href: "/portfolio/project-2",
+        href: "/portfolio/project-3",
         title: "Game App",
         image: require("../../public/images/DBZ_fights.png"),
         imageAlt: "DBZ fight game",
@@ -27,11 +40,11 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnLink: "https://main.d3dgx6dk21g271.amplifyapp.com/",
         btnTitle: "Game App",
         btnText: "Visit the Project",
-        id: 2
+        id: 3
       },
       {
         header: "Meals App",
-        href: "/portfolio/project-3",
+        href: "/portfolio/project-4",
         title: "Meals",
         image: require("../../public/images/Recipes_home.jpg"),
         imageAlt: "Recipes home",
@@ -40,38 +53,39 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnLink: "https://capable-horse-7d9263.netlify.app/",
         btnTitle: "Website",
         btnText: "Visit the Project",
-        id: 3
-      },
-      {
-        header: "Vue 3 Bird app Clone",
-        href: "/portfolio/project-4",
-        title: "Vue app project",
-        image: require("../../public/images/bird.jpg"),
-        imageAlt: "Some bird",
-        subtitle: "Vue 3 Project",
-        description: "Bird app clone created with Vue 3",
-        btnLink: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
-        btnTitle: "Bird app clone",
-        btnText: "Visit the Project",
         id: 4
       },
+      // Saving an empty template for tuture projects
       // {
-        // header: "Arquitectura Apocaliptica Srl",
+        // header: "",
         // href: "/portfolio/project-5",
-        // title: "Arquitectura Apocaliptica - Top Section",
-        // image: require("../../public/images/Apocaliptica-1.jpg"),
+        // title: "",
+        // image: require("../../public/images/_______"),
         // imageAlt: "project image",
-        // subtitle: "Centro de Diseno y Construccion",
-        // description: "Website for an Architecture company.",
-        // btnLink: "https://carlosdvp.github.io/Apocaliptica/",
-        // btnTitle: "Arquitectura Apocaliptica",
-        // btnText: "Visit the Website",
+        // subtitle: "",
+        // description: "",
+        // btnLink: "",
+        // btnTitle: "",
+        // btnText: "",
         // id: 5
       // },
     ],
     projects: [
       {
         id: 1,
+        href: "https://github.com/Carlosdvp/hr-management-app",
+        linkTitle: "HR Application",
+        image: require("../../public/images/Hr_management_app.png"),
+        imageAlt: "screenshot fo the video",
+        title: "HR Management App",
+        subtitleTwo: "Full Stack Application",
+        descriptionOne: "This is a full stack application built with Vue and Vite in the frotned, with Pinia for state management. API built with Node and Express with a MySql database. Prisma used as the ORM and Typescript used across the whole stack.",
+        techStack: ["HTML", "TailwindCSS", "Typescript", "Vue 3", "Vue router", "Pinia", "MySql", "Docker", "Prisma", "Node", "Express"],
+        btnLink: "https://www.loom.com/share/a9ce96c7ee0441fb8acf97bf3d7ac6fe?sid=1c0fe078-b082-4573-8d09-50d9f2024fe5",
+        btnTitle: "Video Demo - Loom"
+      },
+      {
+        id: 2,
         href: "https://sparkly-dusk-69a7da.netlify.app/",
         linkTitle: "Netlify App",
         image: require("../../public/images/landing_page.png"),
@@ -84,7 +98,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnTitle: "Netlify App"
       },  
       {
-        id: 2,
+        id: 3,
         href: "https://main.d3dgx6dk21g271.amplifyapp.com/",
         linkTitle: "DBZ Fight Game",
         image: require("../../public/images/DBZ_fights.png"),
@@ -97,7 +111,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnTitle: "Game App"
       },
       {
-        id: 3,
+        id: 4,
         href: "https://capable-horse-7d9263.netlify.app/",
         linkTitle: "Meals",
         image: require("../../public/images/Recipes_home.jpg"),
@@ -111,35 +125,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnLink: "https://capable-horse-7d9263.netlify.app/",
         btnTitle: "Meals App"
       },
-      {
-        id: 4,
-        href: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
-        linkTitle: "Bird app clone",
-        image: require("../../public/images/bird.jpg"),
-        imageAlt: "project image",
-        title: "Vue 3 Bird App Clone",
-        subtitleTwo: "Bird clone",
-        descriptionOne: "This is a simple clone of the blue bird app, built using Vue 3, along with Vue router and Vuex for state management. Deployed to Heroku",
-        techStack: ["HTML", "CSS3", "JavaScript", "Vue 3", "Vue router", "Vuex"],
-        btnLink: "https://main.d3l5u4m4oy2plg.amplifyapp.com/",
-        btnTitle: "Vue 3 App project"
-      },
-      // {
-        // id: 5,
-        // href: "https://carlosdvp.github.io/Apocaliptica/",
-        // linkTitle: "Arquitectura Apocaliptica - Top Section",
-        // image: require("../../public/images/Apocaliptica-1.jpg"),
-        // imageAlt: "project image",
-        // title: "Arquitectura Apocaliptica Srl",
-        // subtitle: "Centro de Diseno y Construccion",
-        // subtitleTwo: "Santa Cruz de la Sierra, Bolivia",
-        // descriptionOne: "Website for an Architecture company, with 6 main sections on the Homepage; the Navbar, a Jumbotron intro, the Gallery thumbnails in 3 separate sliders. A presentation section introducing the company's design philosohy and another slider for specific project details and employees. Followed by a contact details section.",
-        // descriptionTwo: "Each thumbnail links to a project specific page, which contains a slider gallery for that particular house or building.",
-        // techStack: ["HTML", "CSS3", "JavaScript", "Bootstrap v4.0", "jQuery"],
-        // btnLink: "https://carlosdvp.github.io/Apocaliptica/",
-        // btnTitle: "Arquitectura Apocaliptica"
-      // },
-      // Saving an emptytemplate for tuture projects
+      // Saving an empty template for tuture projects
       //
       // {
       //  id: 4,
@@ -156,9 +142,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
       // }
     ]
   }),
-  actions: {
-
-  },
+  actions: {},
   getters: {
     getNumberOfProjects: (state) => state.projects.length
   }

@@ -19,7 +19,7 @@
           {{ card.description }}
         </p>
       </div>
-      <button class="btn-one md:w-[60%] sm:w-[80%] py-2 justify-self-center border-2 border-white hover:bg-slate-500">
+      <button class="btn-one md:w-[60%] sm:w-[80%] py-2 justify-self-center border-2 border-white hover:bg-slate-600">
         <a
           class="text-white no-underline w-[100%] h-[100%]"
           :href="card.btnLink"

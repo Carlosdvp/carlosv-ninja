@@ -19,7 +19,11 @@ function addGridClass() {
 
 <template>
   <div class="bg-black bg-opacity-80 m-0 text-center h-full">
-    <h1 id="gallery-title">Project Gallery</h1>
+    <h1
+      class="text-white font-serif text-5xl m-0 py-6 border-b-2 border-white tracking-widest">
+      Project Gallery
+    </h1>
+
     <div>
       <button
         class="hover:bg-[#0099CC] justify-self-center border-2 border-blue-400 rounded-sm my-6 mx-2 md:w-[10%] py-2 text-white text-lg cursor-pointer"
@@ -43,21 +47,9 @@ function addGridClass() {
 </template>
 
 <style>
-#gallery-title {
-  color: ghostwhite;
-  text-shadow: darkred 1px 1px;
-  font-family: serif;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0.3em 0;
-  letter-spacing: .15em;
-  border-bottom: 1px solid whitesmoke;
-}
-
 /*********************
 Media Querries
 **********************/
-
 @media only screen and (max-width: 720px) {
   .btn {
     font-size: 1rem;

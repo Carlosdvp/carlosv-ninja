@@ -148,22 +148,22 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 
 1. Added 2 new projects
 2. Moved Bird app clone from Heroku to AWS. Heroku stopped their free hosting plan, and I already have a biiled account with AWS.
+3. Added Pinia to replace Vuex
+4. Added Tailwind and cleaned up the css throughout the app. Made the design look sharper and more professional.
 
 ********************************************************
 
 # Improvements / Fixes Required - 2023
 
-1. Added new Projects to the site
+1. Add new Projects to the site
   - Hardhat Boilerplate conversion from React FE to Vue FE
+  - HR Management app
 
 2. Bug Fix - Noticed that the Navbar renders incorrectly on Chrome
   - This nees to be fixed
     -- it looks like the media querries might have an issue
 
-3. Upgrade the styling
-  - make it more elegant, I like how Uniswap and the GMX Earn page look; use that as inspiration
-
-4. UI improvement
+3. UI improvement
   - make the grid vs list view selection persistent
   - when a user goes into a project's details page and goes back to the Portfolio page the view should be what had been previosuly selected by the user.
   - if it was in Grid view it should remain until List is selected
