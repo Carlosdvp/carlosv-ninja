@@ -27,7 +27,6 @@ const cards = projectsStore.cards;
         </router-link>
       </div>
 
-
       <div class="py-3 text-slate-200">
         <h4>{{ card.subtitle }}</h4>
         <p>{{ card.description }}</p>

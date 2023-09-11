@@ -30,15 +30,15 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         id: 2
       },
       {
-        header: "DBZ Fights Game App",
+        header: "Uniswap Monitoring App",
         href: "/portfolio/project-3",
-        title: "Game App",
-        image: require("../../public/images/DBZ_fights.png"),
-        imageAlt: "DBZ fight game",
-        subtitle: "Vue App with Vuex",
-        description: "Simple game using Vue 3 and Vuex 4.",
-        btnLink: "https://main.d3dgx6dk21g271.amplifyapp.com/",
-        btnTitle: "Game App",
+        title: "Web 3 App",
+        image: require("../../public/images/uniswap_monitoring_app_react.png"),
+        imageAlt: "project image",
+        subtitle: "Web 3 React App",
+        description: "Uniswap V3 on Ethereum network.",
+        btnLink: "https://master.d3w1c8j89zr9es.amplifyapp.com/",
+        btnTitle: "Website",
         btnText: "Visit the Project",
         id: 3
       },
@@ -55,7 +55,6 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         btnText: "Visit the Project",
         id: 4
       },
-      // Saving an empty template for tuture projects
       // {
         // header: "",
         // href: "/portfolio/project-5",
@@ -67,7 +66,7 @@ export const useProjectsStore = defineStore('ProjectsStore', {
         // btnLink: "",
         // btnTitle: "",
         // btnText: "",
-        // id: 5
+        // id: 6
       // },
     ],
     projects: [
@@ -99,16 +98,16 @@ export const useProjectsStore = defineStore('ProjectsStore', {
       },  
       {
         id: 3,
-        href: "https://main.d3dgx6dk21g271.amplifyapp.com/",
-        linkTitle: "DBZ Fight Game",
-        image: require("../../public/images/DBZ_fights.png"),
-        imageAlt: "DBZ game project image",
-        title: "Dragonball Fights Game",
-        subtitleTwo: "A simple Game to showcase Vue 3",
-        descriptionOne: "This game app has been built with Vue 3 and it uses Vuex 4 for state management. The Player card is generated dynamically once a user clicks on one of the fighter options. And that action fires off a method that randomly selects an opponent for the user; the opponent has to be a different fighter.",
-        techStack: ["Vue 3", "Vuex 4", "JavaScript", "HTML", "CSS"],
-        btnLink: "https://main.d3dgx6dk21g271.amplifyapp.com/",
-        btnTitle: "Game App"
+        href: "https://master.d3w1c8j89zr9es.amplifyapp.com/",
+        linkTitle: "Uniswap React App",
+        image: require("../../public/images/uniswap_monitoring_app_react.png"),
+        imageAlt: "Uniswap app page",
+        title: "Uniswap V3 Monitoring App",
+        subtitleTwo: "A Web 3 App made with React",
+        descriptionOne: "This app was built with React, Redux, Typescript, Tailwind and made with Vite, it uses the Alchemy API to talk to the Ethereum blockchain. Given a block number it will give you the Pools created from that block up until the current block. You can then use the Pool contract address to get the token balances, the token names and their symbols.",
+        techStack: ["React", "Redux Toolkit", "React Router", "TypeScript", "HTML", "TailwindCSS", "Etheres.js", "Alchemy sdk"],
+        btnLink: "https://master.d3w1c8j89zr9es.amplifyapp.com/",
+        btnTitle: "Web 3 App"
       },
       {
         id: 4,
