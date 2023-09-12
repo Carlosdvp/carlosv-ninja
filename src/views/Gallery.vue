@@ -18,7 +18,7 @@ function addGridClass() {
 </script>
 
 <template>
-  <div class="bg-black bg-opacity-80 m-0 text-center h-full">
+  <div class="bg-black bg-opacity-80 m-0 text-center">
     <h1
       class="text-white font-serif text-5xl m-0 py-6 border-b-2 border-white tracking-widest">
       Project Gallery

@@ -156,14 +156,20 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
 # Improvements / Fixes Required - 2023
 
 1. Add new Projects to the site
+
   - Hardhat Boilerplate conversion from React FE to Vue FE
-  - HR Management app
+  - HR Management app (re-create the UI using React)
+  - Uniswap monitoring app (re-create the UI using Vue)
+
 
 2. Bug Fix - Noticed that the Navbar renders incorrectly on Chrome
+
   - This nees to be fixed
     -- it looks like the media querries might have an issue
 
-3. UI improvement
+
+3. UI improvement - Grid vs List Persistence
+
   - make the grid vs list view selection persistent
   - when a user goes into a project's details page and goes back to the Portfolio page the view should be what had been previosuly selected by the user.
   - if it was in Grid view it should remain until List is selected
@@ -171,4 +177,18 @@ Created new branch just in case: main > upgrade-from-vue2-to-vue3 >> feature-imp
   - right now it goes back to Grid view whenever a user navigates away from that page
 
 
-  ***********************************************************************************
+4. UI improvement - Responsiveness
+
+    - the cards need to be fixed, the layout breaks badly on smaller screen sizes
+    - the Gallery view espcially, the cards are pushed behind the footer
+
+5. Architecture Improvement - replace Vue-cli with Vite
+
+    - is this even possible without re-doing the whole thing?
+
+6. Architecture Improvement - explore the possiblity of using Typescript
+
+    - kind of like the previous point, is it possible to do something like this for an existing project?
+    - I would probably have to create a new branch
+    - Or start by adding new code in typescript and replacing legacy code little by little
+    - not a must-have if is too cumbersome a task

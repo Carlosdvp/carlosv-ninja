@@ -1,10 +1,10 @@
 <template>
   <div
-    class="grid grid-cols-[40%,60%] w-[70vw] h-auto items-center border-2 border-white py-16 px-5 bg-slate-400 bg-opacity-60 mx-auto my-0 mt-10">
+    class="grid md:grid-cols-[40%,60%] w-[70vw] h-auto items-center border-2 border-white py-16 px-5 bg-slate-400 bg-opacity-60 mx-auto my-0 mt-10">
 
     <a :href="project.href" data-toggle="tooltip" target="_blank">
       <img
-        class="gallery-image img-thumbnail w-[90%] object-cover mx-auto my-0"
+        class="gallery-image img-thumbnail w-[90%] object-cover mx-auto my-0 mb-4"
         :src="project.image"
         :alt="project.imageAlt">
     </a>
@@ -37,9 +37,9 @@
       </ul>
     </div>
     <div
-      class="border-2 border-white py-4 w-[60%] justify-self-center hover:bg-slate-500">
+      class="border-2 border-white py-4 w-[80%] min-w-[70%] sm:text-sm sm:mt-8 md:text-base justify-self-center hover:bg-slate-500 hover:text-white">
       <a :href="project.btnLink" :title="project.btnTitle" target="_blank">
-        Go to {{ project.btnTitle }}
+        {{ project.btnTitle }}
       </a>
     </div>
   </div>

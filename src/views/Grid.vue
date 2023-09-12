@@ -32,7 +32,7 @@ const cards = projectsStore.cards;
         <p>{{ card.description }}</p>
       </div>
 
-      <button class="w-[50%] p-2 border border-white rounded-sm justify-self-center hover:bg-slate-600">
+      <button class="md:w-[60%] sm:text-sm p-2 border border-white rounded-sm justify-self-center hover:bg-slate-600">
         <a
           class="text-lg text-slate-300"
           :href="card.btnLink"
